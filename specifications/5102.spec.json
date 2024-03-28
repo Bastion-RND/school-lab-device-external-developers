@@ -14,6 +14,14 @@
       }
     },
     {
+      "description": "Мутность раствора",
+      "uuid": "ba57501d-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 129
+      }
+    },
+    {
       "description": "Оптическая плотность среды",
       "uuid": "ba57500C-eca0-11ec-8ea0-1337ac062022",
       "sound": {

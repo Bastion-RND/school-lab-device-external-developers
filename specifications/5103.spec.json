@@ -38,6 +38,14 @@
       }
     },
     {
+      "description": "Точка росы",
+      "uuid": "ba57501f-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 131
+      }
+    },
+    {
       "description": "Уровень освещенности",
       "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022",
       "sound": {
@@ -59,6 +67,14 @@
       "sound": {
         "sensorType": 0,
         "soundNumber": 201
+      }
+    },
+    {
+      "description": "Температура, влажность, точка росы",
+      "uuid": "ba575c07-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 206
       }
     }
   ]
