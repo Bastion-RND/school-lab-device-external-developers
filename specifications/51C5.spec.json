@@ -6,8 +6,12 @@
   "moduleName": "NOISE",
   "sensors": [
  {
-      "description": "Уровень шума",
-      "uuid": "ba575014-eca0-11ec-8ea0-1337ac062022"
-    }
+   "description": "Уровень шума",
+   "uuid": "ba575014-eca0-11ec-8ea0-1337ac062022",
+   "sound": {
+     "sensorType": 0,
+     "soundNumber": 120
+   }
+ }
   ]
 }

@@ -7,15 +7,27 @@
   "sensors": [
     {
       "description": "Температура воздуха",
-      "uuid": "ba575002-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575002-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 102
+      }
     },
     {
       "description": "Относительная влажность воздуха",
-      "uuid": "ba575003-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575003-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 103
+      }
     },
     {
       "description": "Уровень освещенности",
-      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 104
+      }
     }
   ]
 }

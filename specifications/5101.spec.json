@@ -7,39 +7,75 @@
   "sensors": [
     {
       "description": "Напряжение",
-      "uuid": "ba57500A-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57500A-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 110
+      }
     },
     {
       "description": "Сила тока",
-      "uuid": "ba575009-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575009-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 109
+      }
     },
     {
       "description": "Гальванометр",
-      "uuid": "ba575021-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575021-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 133
+      }
     },
     {
       "description": "Индукция магнитного поля",
-      "uuid": "ba575007-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575007-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 107
+      }
     },
     {
       "description": "Температура (ЩУП)",
-      "uuid": "ba575001-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575001-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 101
+      }
     },
     {
       "description": "Давление воздуха",
-      "uuid": "ba575006-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575006-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 106
+      }
     },
     {
       "description": "Ускорение по осям",
-      "uuid": "ba57500B-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57500B-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 111
+      }
     },
     {
       "description": "Напряжение и ток",
-      "uuid": "ba575C02-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575C02-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 202
+      }
     },
     {
       "description": "Сила тока и температура (ЩУП)",
-      "uuid": "ba575C03-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575C03-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 203
+      }
     }
   ]
 }

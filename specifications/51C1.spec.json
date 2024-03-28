@@ -7,7 +7,11 @@
   "sensors": [
     {
       "description": "Устройство подсчета капель на штатив",
-      "uuid": "ba57501a-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57501a-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 126
+      }
     }
   ]
 }

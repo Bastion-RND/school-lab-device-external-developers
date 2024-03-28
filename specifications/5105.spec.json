@@ -7,75 +7,147 @@
   "sensors": [
     {
       "description": "Температура воздуха",
-      "uuid": "ba575002-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575002-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 102
+      }
     },
     {
       "description": "Относительная влажность воздуха",
-      "uuid": "ba575003-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575003-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 103
+      }
     },
     {
       "description": "Точка росы",
-      "uuid": "ba57501f-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57501f-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 131
+      }
     },
     {
       "description": "Температура, датчик NTC",
-      "uuid": "ba575015-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575015-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 121
+      }
     },
     {
       "description": "Водородный показатель (pH)",
-      "uuid": "ba575008-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575008-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 108
+      }
     },
     {
       "description": "Электрическая проводимость",
-      "uuid": "ba575005-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575005-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 105
+      }
     },
     {
       "description": "Концентрация ионов",
-      "uuid": "ba575024-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575024-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 136
+      }
     },
     {
       "description": "Уровень освещенности",
-      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 104
+      }
     },    
     {
       "description": "Мутность раствора",
-      "uuid": "ba57501d-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57501d-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 129
+      }
     },
     {
       "description": "Оптическая плотность среды",
-      "uuid": "ba57500c-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57500c-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 112
+      }
     },
     {
       "description": "Влажность почвы",
-      "uuid": "ba575016-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575016-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 122
+      }
     },
     {
       "description": "Концентрация углекислого газа",
-      "uuid": "ba575011-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575011-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 117
+      }
     },
     {
       "description": "Концентрация ЛОВ",
-      "uuid": "ba575020-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575020-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 132
+      }
     },
     {
       "description": "Концентрация нитрат-ионов",
-      "uuid": "ba575017-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575017-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 123
+      }
     },
     {
       "description": "Концентрация хлорид-ионов",
-      "uuid": "ba575018-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575018-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 124
+      }
     },
     {
       "description": "Уровень шума",
-      "uuid": "ba575014-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575014-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 120
+      }
     },
     {
       "description": "Температура, влажность, точка росы",
-      "uuid": "ba575c07-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575c07-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 206
+      }
     },
     {
       "description": "Концентрация CO2, ЛОВ",
-      "uuid": "ba575c08-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575c08-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 207
+      }
     }
   ]
 }

@@ -7,31 +7,59 @@
   "sensors": [
     {
       "description": "Водородный показатель (pH)",
-      "uuid": "ba575008-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575008-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 108
+      }
     },
     {
       "description": "Оптическая плотность среды",
-      "uuid": "ba57500C-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57500C-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 112
+      }
     },
     {
       "description": "Температура (ЩУП)",
-      "uuid": "ba575001-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575001-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 101
+      }
     },
     {
       "description": "Электрическая проводимость",
-      "uuid": "ba575005-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575005-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 105
+      }
     },
     {
       "description": "Концентрация ионов",
-      "uuid": "ba575024-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575024-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 136
+      }
     },
     {
       "description": "PH – показатель среды и температура (ЩУП)",
-      "uuid": "ba575C04-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575C04-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 204
+      }
     },
     {
       "description": "Температура (ЩУП) и электрическая проводимость",
-      "uuid": "ba575C05-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575C05-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 205
+      }
     }
   ]
 }

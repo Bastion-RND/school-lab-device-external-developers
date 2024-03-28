@@ -24,6 +24,23 @@
     "moduleName": {
       "type": "string",
       "maxLength": 32
+    },
+    "sound": {
+      "type": "object",
+      "description": "Sensor sound config",
+      "properties": {
+        "sensorType": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "soundNumber": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sensorType",
+        "soundNumber"
+      ]
     }
   },
   "type": "object",
@@ -61,6 +78,9 @@
           },
           "uuid": {
             "$ref": "#/$definitions/uuid"
+          },
+          "sound": {
+            "$ref": "#/$definitions/sound"
           }
         },
         "required": [

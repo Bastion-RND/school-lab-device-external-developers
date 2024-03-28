@@ -7,35 +7,67 @@
   "sensors": [
     {
       "description": "Уровень освещенности",
-      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 104
+      }
     },
     {
       "description": "Температура, датчик NTC",
-      "uuid": "ba575015-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575015-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 121
+      }
     },
     {
       "description": "Ускорение по осям",
-      "uuid": "ba57500b-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57500b-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 111
+      }
     },
     {
       "description": "Частота сердечных сокращений",
-      "uuid": "ba575013-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575013-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 119
+      }
     },
     {
       "description": "Электрокардиограф",
-      "uuid": "ba575012-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575012-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 118
+      }
     },
     {
       "description": "Частота дыхания",
-      "uuid": "ba57501b-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57501b-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 127
+      }
     },
     {
       "description": "Артериальное давление",
-      "uuid": "ba57501c-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57501c-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 128
+      }
     },
     {
       "description": "Динамометр",
-      "uuid": "ba57500f-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba57500f-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 115
+      }
     }
   ]
 }

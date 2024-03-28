@@ -7,31 +7,59 @@
   "sensors": [
     {
       "description": "Водородный показатель (pH)",
-      "uuid": "ba575008-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575008-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 108
+      }
     },
     {
       "description": "Температура (ЩУП)",
-      "uuid": "ba575001-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575001-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 101
+      }
     },
     {
       "description": "Температура воздуха",
-      "uuid": "ba575002-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575002-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 102
+      }
     },
     {
       "description": "Относительная влажность воздуха",
-      "uuid": "ba575003-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575003-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 103
+      }
     },
     {
       "description": "Уровень освещенности",
-      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575004-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 104
+      }
     },
     {
       "description": "Водородный показатель (pH) и температура (ЩУП)",
-      "uuid": "ba575C04-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575C04-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 204
+      }
     },
     {
       "description": "Температура и относительная влажность воздуха",
-      "uuid": "ba575C01-eca0-11ec-8ea0-1337ac062022"
+      "uuid": "ba575C01-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 201
+      }
     }
   ]
 }

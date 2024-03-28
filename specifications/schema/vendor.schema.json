@@ -102,6 +102,32 @@
         }
       },
       "additionalProperties": false
+    },
+    "sound": {
+      "type": "object",
+      "description": "Sound config",
+      "properties": {
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["ru", "en", "fr", "uz", "kz"]
+          }
+        },
+        "voices": {
+          "type": "array",
+          "maxItems": 2,
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "enum": [0, 1]
+          }
+        }
+      },
+      "required": [
+        "languages",
+        "voices"
+      ]
     }
   },
   "required": [
