@@ -34,3 +34,6 @@
   
 Почта для обратной связи - school-lab@bast.ru
 ***
+
+## Запиcь аудиофайлов на microSD
+[Ссылка](/write-to-microsd.md)
