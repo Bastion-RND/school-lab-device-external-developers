@@ -94,11 +94,11 @@
       }
     },
     {
-      "description": "Концентрация углекислого газа",
-      "uuid": "ba575011-eca0-11ec-8ea0-1337ac062022",
+      "description": "Концентрация угарного газа",
+      "uuid": "ba575027-eca0-11ec-8ea0-1337ac062022",
       "sound": {
-        "sensorType": 1,
-        "soundNumber": 117
+        "sensorType": 0,
+        "soundNumber": 139
       }
     },
     {
