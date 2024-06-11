@@ -9,7 +9,24 @@
       "title": "Напряжение"
     },
     "5009": {
-      "#include": "specifications/vendor/laboratory/sensor/5009-electrical-current.json"
+      "#include": "specifications/vendor/laboratory/sensor/5009-electrical-current.json",
+      "title": "Сила тока"
+    },
+    "5021": {
+      "#include": "specifications/vendor/laboratory/sensor/5021-galvanometer.json",
+      "title": "Гальванометр"
+    },
+    "5007": {
+      "#include": "specifications/vendor/laboratory/sensor/5007-magnetic-induction.json",
+      "title": "Индукция магнитного поля"
+    },
+    "5001": {
+      "#include": "specifications/vendor/laboratory/sensor/5001-temreture-thermocouple.json",
+      "title": "Температура (ЩУП)"
+    },
+    "5006": {
+      "#include": "specifications/vendor/laboratory/sensor/5006-air-pressure.json",
+      "title": "Давление воздуха"
     }
   }
 }
