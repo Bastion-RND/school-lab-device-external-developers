@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/laboratory-schema.json",
+  "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+  "title": "Школьная лаборатория: Физика",
+  "type": "5101",
+  "modules": {
+    "500a": {
+      "#include": "specifications/vendor/laboratory/sensor/500a-electrical-voltage.json",
+      "title": "Напряжение"
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "$schema": "../../schema/laboratory-schema.json",
+  "title": "Школьная лаборатория: FIXME!",
+  "description": null,
+  "lifeCycle": "PRODUCTION",
+  "updaterReleaseType": "sl2-firmware",
+  "commands": [
+    "CUSTOM_COMMAND",
+    "REFRESH_DATA",
+    "READ_FILE",
+    "WRITE_FILE",
+    "STAT_FILE",
+    "SET_TIME",
+    "REBOOT"
+  ],
+  "modules": {
+    "0": {
+      "type": "5200",
+      "title": "Школьная лаборатория, смарт-модуль",
+      "description": null,
+      "parameters": {
+        "0003": {
+          "title": "UUID устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "00000000-0000-0000-0000-000000000000",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/deviceUuid",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba571f23-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        },
+        "0005": {
+          "title": "Серийный номер устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "0000 0000 0000 0000 0000",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/serialNumber",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba571f25-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        },
+        "0006": {
+          "title": "Версия прошивки устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "0.0.1",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/firmwareRevision",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba571f26-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        },
+        "0007": {
+          "title": "Ревизия платы устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "K010170",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/hardwareRevision",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba571f27-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        },
+        "0009": {
+          "title": "Имя производителя устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "ООО Вектор",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/manufacturer",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba571f29-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        },
+        "003c": {
+          "title": "Уровень заряда батареи",
+          "description": null,
+          "readonly": true,
+          "valueType": "UINT8",
+          "defaultValue": [
+            0
+          ],
+          "meta": {
+            "valueLabel": [
+              "Заряд батареи"
+            ],
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM",
+              "BATTERY"
+            ],
+            "configPath": "#/battery/level",
+            "pollPeriod": 30000,
+            "ble": {
+              "characteristicUuid": "ba571f19-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        },
+        "003d": {
+          "title": "Режим заряда батареи",
+          "description": null,
+          "readonly": true,
+          "valueType": "UINT8",
+          "defaultValue": [
+            0
+          ],
+          "meta": {
+            "valueLabel": [
+              "Режим заряда батареи"
+            ],
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM",
+              "BATTERY"
+            ],
+            "configPath": "#/battery/mode",
+            "pollPeriod": 1000
+          }
+        },
+        "003e": {
+          "title": "Аварии батареи",
+          "description": null,
+          "readonly": true,
+          "valueType": "FLAG16",
+          "defaultValue": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "meta": {
+            "flag": {
+              "Батарея не подключена": 0
+            },
+            "valueLabel": [
+              "Аварии батареи"
+            ],
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM",
+              "BATTERY"
+            ],
+            "configPath": "#/battery/error",
+            "pollPeriod": 1000
+          }
+        },
+        "800a": {
+          "title": "Пользовательское имя устройства",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "USB Хаб",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/customTitle",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba571f2a-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        }
+      }
+    }
+  }
+}

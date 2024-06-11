@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema/device-schema.json",
+  "title": "SmartDevice Specification Schema",
+  "description": "",
+  "$definitions": {
+    "type": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 4
+    },
+    "title": {
+      "type": "string",
+      "minLength": 0
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "integerOrNumber": {
+      "type": [
+        "integer",
+        "number"
+      ]
+    },
+    "parameterMeta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sortOrder": {
+          "type": "number",
+          "minimum": 0,
+          "default": 0
+        },
+        "minValue": {
+          "$ref": "#/$definitions/integerOrNumber"
+        },
+        "maxValue": {
+          "$ref": "#/$definitions/integerOrNumber"
+        },
+        "precision": {
+          "$ref": "#/$definitions/integerOrNumber"
+        },
+        "unitName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "object"
+        },
+        "valueLabel": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "flag": {
+          "type": "object"
+        },
+        "bitMatching": {
+          "type": "object"
+        },
+        "parameterGroup": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "LOCAL",
+              "UNSAFE",
+              "HIDDEN",
+              "PASSWORD",
+              "ERROR",
+              "ALARM",
+              "SYSTEM",
+              "INFO",
+              "MAIN",
+              "NETWORK",
+              "TEMPERATURE",
+              "HUMIDITY",
+              "PRESSURE",
+              "ELECTRICAL",
+              "DISCRETE",
+              "BLUETOOTH",
+              "SENSORS"
+            ]
+          }
+        },
+        "pollPeriod": {
+          "type": "number",
+          "description": "Период опроса параметра по MODBUS (мс)",
+          "minimum": 0,
+          "default": 0
+        },
+        "configPath": {
+          "type": "string",
+          "description": "Представление параметра в config-файле",
+          "pattern": "^#/[\\w/]+$"
+        },
+        "ble": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "characteristicUuid": {
+              "type": "string",
+              "pattern": "^([0-9a-f-])+$",
+              "minLength": 36,
+              "maxLength": 36
+            },
+            "descriptorUuid": {
+              "type": "string",
+              "pattern": "^([0-9a-f-])+$",
+              "minLength": 4,
+              "maxLength": 4
+            }
+          },
+          "required": [
+            "characteristicUuid"
+          ]
+        },
+        "snmp": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "oid": {
+              "type": "string",
+              "description": "OID параметра для SNMP-менеджера",
+              "pattern": "^([\\d].?)*[\\d]$"
+            },
+            "trap": {
+              "type": "bool",
+              "default": false
+            }
+          },
+          "required": [
+            "oid"
+          ]
+        },
+        "megatec": {
+          "cmd": {
+            "type": "string"
+          },
+          "index": {
+            "type": "integer"
+          }
+        }
+      },
+      "required": [
+        "sortOrder",
+        "parameterGroup"
+      ]
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$id": {
+          "type": "string",
+          "minLength": 0
+        },
+        "title": {
+          "$ref": "#/$definitions/title"
+        },
+        "description": {
+          "$ref": "#/$definitions/description"
+        },
+        "regAddr": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 65534
+        },
+        "readonly": {
+          "type": "boolean"
+        },
+        "valueType": {
+          "type": "string",
+          "enum": [
+            "BOOL",
+            "INT8",
+            "UINT8",
+            "FLAG8",
+            "INT16",
+            "UINT16",
+            "FLAG16",
+            "INT32",
+            "UINT32",
+            "FLAG32",
+            "FLOAT32",
+            "STRING",
+            "IPADDR"
+          ],
+          "default": "BOOL"
+        },
+        "defaultValue": {
+          "type": [
+            "string",
+            "array"
+          ]
+        },
+        "meta": {
+          "$ref": "#/$definitions/parameterMeta"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "readonly",
+        "valueType",
+        "defaultValue",
+        "meta"
+      ]
+    },
+    "parameters": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "patternProperties": {
+        "[0-9]": {
+          "$ref": "#/$definitions/parameter"
+        }
+      }
+    },
+    "commands": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "string",
+        "enum": [
+          "CUSTOM_COMMAND",
+          "REQUEST_CONNECT",
+          "REFRESH_DATA",
+          "READ_FILE",
+          "WRITE_FILE",
+          "STAT_FILE",
+          "SET_TIME",
+          "REBOOT"
+        ]
+      }
+    },
+    "updaterReleaseType": {
+      "type": "string",
+      "minLength": 1
+    },
+    "module": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/$definitions/type"
+        },
+        "title": {
+          "$ref": "#/$definitions/title"
+        },
+        "description": {
+          "$ref": "#/$definitions/description"
+        },
+        "parameters": {
+          "$ref": "#/$definitions/parameters"
+        }
+      },
+      "required": [
+        "type",
+        "title",
+        "description",
+        "parameters"
+      ]
+    },
+    "modules": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "patternProperties": {
+        "[0-9]": {
+          "$ref": "#/$definitions/module"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "title": {
+      "$ref": "#/$definitions/title"
+    },
+    "description": {
+      "$ref": "#/$definitions/description"
+    },
+    "type": {
+      "$ref": "#/$definitions/type"
+    },
+    "commands": {
+      "$ref": "#/$definitions/commands"
+    },
+    "updaterReleaseType": {
+      "$ref": "#/$definitions/updaterReleaseType"
+    },
+    "modules": {
+      "$ref": "#/$definitions/modules"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "commands",
+    "modules",
+    "updaterReleaseType"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "type": "5000",
+  "title": "FIXME!",
+  "description": null,
+  "parameters": {
+    "0b00": {
+      "title": "Измеренное значение",
+      "description": null,
+      "readonly": true,
+      "valueType": "FLOAT32",
+      "defaultValue": [
+        0.0
+      ],
+      "meta": {
+        "valueLabel": [
+          "Измеренное значение"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    },
+    "0b01": {
+      "title": "Стадия измерения",
+      "description": null,
+      "readonly": true,
+      "valueType": "INT16",
+      "defaultValue": [
+        0
+      ],
+      "meta": {
+        "stage": {
+          "0": {
+            "title": "Справочная информация. Приглашение начать измерения.",
+            "source": "sensor-information.html"
+          },
+          "10": {
+            "title": "Процесс измерения.",
+            "source": "sensor-measure.html"
+          },
+          "20": {
+            "title": "Отображение результатов измерений.",
+            "source": "sensor-display-values.html"
+          }
+        },
+        "valueLabel": [
+          "Стадия измерения"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    },
+    "0b02": {
+      "title": "Ошибки сенсора",
+      "description": null,
+      "readonly": true,
+      "valueType": "FLAG32",
+      "defaultValue": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "meta": {
+        "flag": {
+          "Датчик не подключен": 0
+        },
+        "valueLabel": [
+          "Ошибки сенсора"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    },
+    "8b00": {
+      "title": "Команда управления сенсором",
+      "description": null,
+      "readonly": false,
+      "valueType": "UINT32",
+      "defaultValue": [
+        0
+      ]
+    },
+    "8b01": {
+      "title": "Диапазон измерения",
+      "description": null,
+      "readonly": false,
+      "valueType": "UINT16",
+      "defaultValue": [
+        0
+      ],
+      "meta": {
+        "range": [
+          {
+            "minValue": 0.0,
+            "maxValue": 0.0,
+            "precision": 0,
+            "unitName": "",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Диапазон измерения"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    },
+    "8b02": {
+      "title": "Калибровка сенсора",
+      "description": null,
+      "readonly": false,
+      "valueType": "FLOAT32",
+      "defaultValue": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

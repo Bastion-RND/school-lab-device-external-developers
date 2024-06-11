@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Напряжение",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Напряжение"
+        ]
+      }
+    },
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": -2.0,
+            "maxValue": 2.0,
+            "precision": 3,
+            "unitName": "В",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          },
+          {
+            "minValue": -5.0,
+            "maxValue": 5.0,
+            "precision": 3,
+            "unitName": "В",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          },
+          {
+            "minValue": -10.0,
+            "maxValue": 10.0,
+            "precision": 2,
+            "unitName": "В",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          },
+          {
+            "minValue": -15.0,
+            "maxValue": 15.0,
+            "precision": 2,
+            "unitName": "В",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          },
+          {
+            "minValue": -20.0,
+            "maxValue": 20.0,
+            "precision": 2,
+            "unitName": "В",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          }
+        ],
+        "valueLabel": [
+          "Предел измерения напряжения"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    }
+  },
+  "type": "500a",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba57500a-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
+}
+
+

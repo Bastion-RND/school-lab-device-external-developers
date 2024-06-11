@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/vendor-schema.json",
+  "title": "Вендор: FIXME!",
+  "description": null,
+  "laboratories": {
+  },
+  "meta": {
+    "about": "about-vendor.html",
+    "vendor": {
+      "target": "vendor",
+      "name": "vendor",
+      "logo": "vendor.svg"
+    },
+    "product": {
+      "name": "product",
+      "logo": "product.svg"
+    },
+    "build": {
+      "windows": {
+        "appId": "com.example.vendor"
+      },
+      "linux": {
+        "appId": "com.example.vendor"
+      },
+      "mac": {
+        "appId": "com.example.vendor"
+      },
+      "android": {
+        "appId": "com.example.vendor"
+      }
+    }
+  }
+}

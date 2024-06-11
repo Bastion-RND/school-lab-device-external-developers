@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Школьная лаборатория - Вендор (Schema)",
+  "description": "",
+  "$defs": {
+    "json": {
+      "type": "string",
+      "pattern": "^([0-9a-z-./])+\\.json$"
+    },
+    "html": {
+      "type": "string",
+      "pattern": "^([0-9a-z-./])+\\.html$"
+    },
+    "image": {
+      "type": "string",
+      "pattern": "^([0-9a-z-./])+\\.(svg|png)$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 0
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lifeCycle": {
+      "type": "string",
+      "enum": [
+        "UNAVAILABLE",
+        "PRE-ALPHA",
+        "ALPHA",
+        "BETA",
+        "RELEASE CANDIDATE",
+        "RELEASE",
+        "PRODUCTION",
+        "END OF LIFE"
+      ],
+      "default": "BETA"
+    },
+    "laboratory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "#include": {
+          "$ref": "#/$defs/json"
+        },
+        "title": {
+          "$ref": "#/$defs/title"
+        },
+        "description": {
+          "$ref": "#/$defs/description"
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]+$"
+        },
+        "lifeCycle": {
+          "$ref": "#/$defs/lifeCycle"
+        }
+      },
+      "required": [
+        "#include"
+      ]
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "$ref": "#/$defs/json"
+    },
+    "#include": {
+      "$ref": "#/$defs/json"
+    },
+    "title": {
+      "$ref": "#/$defs/title"
+    },
+    "description": {
+      "$ref": "#/$defs/description"
+    },
+    "laboratories": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[0-9a-f]+$": {
+          "$ref": "#/$defs/laboratory"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "about": {
+          "$ref": "#/$defs/html"
+        },
+        "vendor": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "target": {
+              "type": "string",
+              "pattern": "^([0-9a-z-])+$"
+            },
+            "name": {
+              "$ref": "#/$defs/title"
+            },
+            "logo": {
+              "$ref": "#/$defs/image"
+            }
+          },
+          "required": [
+            "target",
+            "name",
+            "logo"
+          ]
+        },
+        "product": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "$ref": "#/$defs/title"
+            },
+            "logo": {
+              "$ref": "#/$defs/image"
+            }
+          },
+          "required": [
+            "name",
+            "logo"
+          ]
+        },
+        "build": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "(windows|linux|mac|android|ios)": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "appId": {
+                  "$ref": "#/$defs/title"
+                }
+              },
+              "required": [
+                "appId"
+              ]
+            }
+          }
+        }
+      },
+      "required": [
+        "about",
+        "vendor",
+        "product",
+        "build"
+      ]
+    }
+  },
+  "required": [
+    "$schema",
+    "title",
+    "laboratories"
+  ]
+}

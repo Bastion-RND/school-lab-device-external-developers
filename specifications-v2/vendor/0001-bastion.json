@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/vendor-schema.json",
+  "#include": "specifications/vendor/abstract-vendor.json",
+  "title": "Бастион: Школьная лаборатория",
+  "laboratories": {
+    "5101": {
+      "#include": "specifications/vendor/laboratory/5101-physics.json"
+    }
+  },
+  "meta": {
+    "about": "about-bastion.html",
+    "vendor": {
+      "target": "bastion",
+      "name": "Бастион",
+      "logo": "bastion.svg"
+    },
+    "product": {
+      "name": "Школьная лаборатория",
+      "logo": "school-lab.svg"
+    },
+    "build": {
+      "windows": {
+        "appId": "ru.bast.schoollab"
+      },
+      "linux": {
+        "appId": "ru.bast.schoollab"
+      },
+      "mac": {
+        "appId": "ru.bast.schoollab"
+      },
+      "android": {
+        "appId": "ru.bast.schoollab"
+      }
+    }
+  }
+}
