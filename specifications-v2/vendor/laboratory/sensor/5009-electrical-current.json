@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Сила тока",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Сила тока"
+        ]
+      }
+    },
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": -5.0,
+            "maxValue": 5.0,
+            "precision": 3,
+            "unitName": "А",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          },
+          {
+            "minValue": -1.0,
+            "maxValue": 1.0,
+            "precision": 3,
+            "unitName": "А",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Предел измерения силы тока"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    }
+  },
+  "type": "5009",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575009-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
+}

@@ -7,6 +7,9 @@
     "500a": {
       "#include": "specifications/vendor/laboratory/sensor/500a-electrical-voltage.json",
       "title": "Напряжение"
+    },
+    "5009": {
+      "#include": "specifications/vendor/laboratory/sensor/5009-electrical-current.json"
     }
   }
 }
