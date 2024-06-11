@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Температура воздуха",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Температура воздуха"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": -40.0,
+                "maxValue": 125.0,
+                "precision": 1,
+                "unitName": "°C",
+                "unitNameOffset": 0,
+                "calibrationPoints": 1
+              }
+            ],
+            "valueLabel": [
+              "Температура воздуха"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5002",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575002-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

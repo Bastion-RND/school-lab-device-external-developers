@@ -1,0 +1,48 @@
+{
+"$schema": "../../../schema/sensor-schema.json",
+"#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+"title": "Гальванометр",
+"parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Измерение силы малых постоянных электрических токов"
+        ]
+      }
+    },
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": -0.250,
+            "maxValue": 0.250,
+            "precision": 1,
+            "unitName": "А",
+            "unitNameOffset": 0,
+            "calibrationPoints": 1
+          },
+          {
+            "minValue": -0.100,
+            "maxValue": 0.100,
+            "precision": 1,
+            "unitName": "А",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Измерение силы малых постоянных электрических токов"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    }
+},
+"type": "5021",
+"meta": {
+  "ble": {
+    "characteristicUuid": "ba575021-eca0-11ec-8ea0-1337ac062022"
+  }
+}
+}

@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Магнитная индукция",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Индукция магнитного поля"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": -0.175,
+                "maxValue": 0.175,
+                "precision": 2,
+                "unitName": "Тл",
+                "unitNameOffset": 0,
+                "calibrationPoints": 2
+              }
+            ],
+            "valueLabel": [
+              "Индукция магнитного поля"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5007",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575007-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

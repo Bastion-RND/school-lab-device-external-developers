@@ -1,0 +1,56 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Концентрация ионов",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Концентрация ионов"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0,
+                "maxValue": 12500,
+                "precision": 0,
+                "unitName": "ppm",
+                "unitNameOffset": 0,
+                "calibrationPoints": 2
+              },
+              {
+                "minValue": 0,
+                "maxValue": 16000,
+                "precision": 0,
+                "unitName": "ppm",
+                "unitNameOffset": 0,
+                "calibrationPoints": 2
+              },
+              {
+                "minValue": 0,
+                "maxValue": 17500,
+                "precision": 0,
+                "unitName": "ppm",
+                "unitNameOffset": 0,
+                "calibrationPoints": 2
+              }
+            ],
+            "valueLabel": [
+              "Концентрация ионов"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5024",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575024-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

@@ -1,0 +1,64 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Электрическая проводимость",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Электрическая проводимость"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.0,
+                "maxValue": 0.000200,
+                "precision": 0,
+                "unitName": "См",
+                "unitNameOffset": 1,
+                "calibrationPoints": 2
+              },
+              {
+                "minValue": 0.0,
+                "maxValue": 0.002000,
+                "precision": 0,
+                "unitName": "См",
+                "unitNameOffset": 1,
+                "calibrationPoints": 2
+              },
+              {
+                "minValue": 0.0,
+                "maxValue": 0.020000,
+                "precision": 0,
+                "unitName": "См",
+                "unitNameOffset": 1,
+                "calibrationPoints": 2
+              },
+              {
+                "minValue": 0.0,
+                "maxValue": 0.200000,
+                "precision": 0,
+                "unitName": "См",
+                "unitNameOffset": 1,
+                "calibrationPoints": 2
+              }
+            ],
+            "valueLabel": [
+              "Электрическая проводимость"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5005",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575005-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

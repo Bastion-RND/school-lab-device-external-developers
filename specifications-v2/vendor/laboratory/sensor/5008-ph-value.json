@@ -1,0 +1,48 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Водородный показатель (pH)",
+    "parameters": {
+      "0b00": {
+        "meta": {
+          "valueLabel": [
+            "Водородный показатель (pH)"
+          ]
+        }
+      },
+      "8b01": {
+        "meta": {
+          "range": [
+            {
+              "minValue": 0.0,
+              "maxValue": 14.0,
+              "precision": 2,
+              "unitName": "pH",
+              "unitNameOffset": 1,
+              "calibrationPoints": 2
+            },
+            {
+              "minValue": 4.0,
+              "maxValue": 10.0,
+              "precision": 2,
+              "unitName": "pH",
+              "unitNameOffset": 1,
+              "calibrationPoints": 0
+            }
+          ],
+          "valueLabel": [
+            "Водородный показатель (pH)"
+          ],
+          "parameterGroup": [
+            "SENSOR"
+          ]
+        }
+      }
+    },
+    "type": "5008",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575008-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+  }  
