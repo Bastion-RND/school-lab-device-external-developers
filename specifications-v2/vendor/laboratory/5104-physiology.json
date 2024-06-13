@@ -1,0 +1,37 @@
+{
+    "$schema": "../../schema/laboratory-schema.json",
+    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+    "title": "Школьная лаборатория: Физиология",
+    "type": "5104",
+    "modules": {
+      "5004": {
+        "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
+        "title": "Уровень освещенности"
+      },    
+      "5015": {
+        "#include": "specifications/vendor/laboratory/sensor/5015-temreture-ntc-sensor.json",
+        "title": "Температура, датчик NTC"
+      },
+      "500b": {
+        "#include": "specifications/vendor/laboratory/sensor/500b-accelerometer.json",
+        "title": "Ускорение по осям"
+      },
+      "5013": {
+        "#include": "specifications/vendor/laboratory/sensor/5013-heart-rate.json",
+        "title": "Частота сердечных сокращений"
+      },
+      "5012": {
+        "#include": "specifications/vendor/laboratory/sensor/5012-electrocardiograph.json",
+        "title": "Электрокардиограф"
+      },
+      "501b": {
+        "#include": "specifications/vendor/laboratory/sensor/501b-breathing-rate.json",
+        "title": "Частота дыхания"
+      },
+      "500f": {
+        "#include": "specifications/vendor/laboratory/sensor/500f-dynamometer.json",
+        "title": "Динамометр"
+      }
+  
+    }
+  }

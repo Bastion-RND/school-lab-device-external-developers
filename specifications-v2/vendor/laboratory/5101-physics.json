@@ -27,6 +27,10 @@
     "5006": {
       "#include": "specifications/vendor/laboratory/sensor/5006-air-pressure.json",
       "title": "Давление воздуха"
+    },
+    "500b": {
+      "#include": "specifications/vendor/laboratory/sensor/500b-accelerometer.json",
+      "title": "Ускорение по осям"
     }
   }
 }

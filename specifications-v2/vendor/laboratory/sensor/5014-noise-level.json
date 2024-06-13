@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Уровень шума",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Шум"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.0,
+                "maxValue": 2.0,
+                "precision": 3,
+                "unitName": "Па",
+                "unitNameOffset": 0,
+                "calibrationPoints": 1
+              }                          
+            ],
+            "valueLabel": [
+              "Шум"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5014",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575014-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

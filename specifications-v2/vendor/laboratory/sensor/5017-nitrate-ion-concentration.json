@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Датчик нитрат-ионо",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Нитрат-ионы"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.00005,
+                "maxValue": 0.5,
+                "precision": 5,
+                "unitName": "м/л",
+                "unitNameOffset": 0,
+                "calibrationPoints": 1
+              }                          
+            ],
+            "valueLabel": [
+              "Нитрат-ионы"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5017",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575017-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Датчик хлорид-ионов",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Хлорид-ионы"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.00001,
+                "maxValue": 1.0,
+                "precision": 5,
+                "unitName": "м/л",
+                "unitNameOffset": 0,
+                "calibrationPoints": 1
+              }                          
+            ],
+            "valueLabel": [
+              "Хлорид-ионы"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5018",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575018-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

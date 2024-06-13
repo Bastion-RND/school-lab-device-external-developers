@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Тензодатчик",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Динамометр"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.0,
+                "maxValue": 50.0,
+                "precision": 3,
+                "unitName": "кг",
+                "unitNameOffset": 0,
+                "calibrationPoints": 1
+              }
+            ],
+            "valueLabel": [
+              "Вес"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "500f",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba57500f-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

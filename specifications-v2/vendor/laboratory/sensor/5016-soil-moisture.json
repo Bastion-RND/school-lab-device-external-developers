@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Датчик влажности почвы",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Влажность почвы"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.0,
+                "maxValue": 100.0,
+                "precision": 0,
+                "unitName": "%",
+                "unitNameOffset": 0,
+                "calibrationPoints": 1
+              }
+            ],
+            "valueLabel": [
+              "Влажность"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5016",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575016-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

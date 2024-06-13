@@ -1,0 +1,71 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Ускорение (акселерометр)",
+    "parameters": {
+        "0b00": {
+          "defaultValue": [
+            0.0, 
+            0.0, 
+            0.0
+          ],
+          "meta": {
+            "valueLabel": [
+              "Ускорение ось X",
+              "Ускорение ось Y",
+              "Ускорение ось Z"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": -2.0,
+                "maxValue": 2.0,
+                "precision": 2,
+                "unitName": "g",
+                "unitNameOffset": 1,
+                "calibrationPoints": 1
+              },
+              {
+                "minValue": -4.0,
+                "maxValue": 4.0,
+                "precision": 2,
+                "unitName": "g",
+                "unitNameOffset": 1,
+                "calibrationPoints": 0
+              },
+              {
+                "minValue": -8.0,
+                "maxValue": 8.0,
+                "precision": 2,
+                "unitName": "g",
+                "unitNameOffset": 1,
+                "calibrationPoints": 0
+              },
+              {
+                "minValue": -16.0,
+                "maxValue": 16.0,
+                "precision": 2,
+                "unitName": "g",
+                "unitNameOffset": 1,
+                "calibrationPoints": 0
+              }
+            ],
+            "valueLabel": [
+              "Ускорение"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "500b",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba57500b-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

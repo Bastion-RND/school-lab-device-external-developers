@@ -18,7 +18,7 @@
             "maxValue": 5.0,
             "precision": 3,
             "unitName": "А",
-            "unitNameOffset": 0,
+            "unitNameOffset": 1,
             "calibrationPoints": 2
           },
           {
@@ -26,7 +26,7 @@
             "maxValue": 1.0,
             "precision": 3,
             "unitName": "А",
-            "unitNameOffset": 0,
+            "unitNameOffset": 1,
             "calibrationPoints": 0
           }
         ],

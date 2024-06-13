@@ -20,7 +20,7 @@
         "#include": "specifications/vendor/laboratory/sensor/5001-temreture-thermocouple.json",
         "title": "Температура (ЩУП)"
       },
-      "5007": {
+      "5005": {
         "#include": "specifications/vendor/laboratory/sensor/5005-electrical-conductivity.json",
         "title": "Электрическая проводимость"
       },

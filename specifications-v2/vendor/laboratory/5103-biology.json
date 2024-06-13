@@ -16,18 +16,18 @@
         "#include": "specifications/vendor/laboratory/sensor/5002-air-temperature.json",
         "title": "Температура воздуха"
       },
-      "500c": {
-        "#include": "specifications/vendor/laboratory/sensor/500c-galvanometer.json",
-        "title": "Оптическая плотность среды"
+      "5003": {
+        "#include": "specifications/vendor/laboratory/sensor/5003-relative-humidity.json",
+        "title": "Относительная влажность воздуха"
       },
-      "5007": {
-        "#include": "specifications/vendor/laboratory/sensor/5005-electrical-conductivity.json",
-        "title": "Электрическая проводимость"
+      "501f": {
+        "#include": "specifications/vendor/laboratory/sensor/501f-dew-point.json",
+        "title": "Точка росы"
       },
-      "5024": {
-        "#include": "specifications/vendor/laboratory/sensor/5024-ion-concentration.json",
-        "title": "Концентрация ионов"
+      "5004": {
+        "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
+        "title": "Уровень освещенности"
       }
-  
+
     }
   }

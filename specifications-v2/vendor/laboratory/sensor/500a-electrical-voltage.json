@@ -18,7 +18,7 @@
             "maxValue": 2.0,
             "precision": 3,
             "unitName": "В",
-            "unitNameOffset": 0,
+            "unitNameOffset": 1,
             "calibrationPoints": 2
           },
           {
@@ -26,7 +26,7 @@
             "maxValue": 5.0,
             "precision": 3,
             "unitName": "В",
-            "unitNameOffset": 0,
+            "unitNameOffset": 1,
             "calibrationPoints": 2
           },
           {
@@ -34,7 +34,7 @@
             "maxValue": 10.0,
             "precision": 2,
             "unitName": "В",
-            "unitNameOffset": 0,
+            "unitNameOffset": 1,
             "calibrationPoints": 2
           },
           {
@@ -42,7 +42,7 @@
             "maxValue": 15.0,
             "precision": 2,
             "unitName": "В",
-            "unitNameOffset": 0,
+            "unitNameOffset": 1,
             "calibrationPoints": 2
           },
           {
@@ -50,7 +50,7 @@
             "maxValue": 20.0,
             "precision": 2,
             "unitName": "В",
-            "unitNameOffset": 0,
+            "unitNameOffset": 1,
             "calibrationPoints": 2
           }
         ],

@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Концентрация угарного газа",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Концентрация угарного газа"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0,
+                "maxValue": 1000,
+                "precision": 0,
+                "unitName": "ppm",
+                "unitNameOffset": 0,
+                "calibrationPoints": 2
+              }
+            ],
+            "valueLabel": [
+              "CO"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5027",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575027-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

@@ -1,0 +1,40 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Относительная влажность воздуха",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Относительная влажность воздуха"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.0,
+                "maxValue": 100.0,
+                "precision": 1,
+                "unitName": "%",
+                "unitNameOffset": 0,
+                "calibrationPoints": 1
+              }
+            ],
+            "valueLabel": [
+              "Относительная влажность"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5003",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575003-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }
