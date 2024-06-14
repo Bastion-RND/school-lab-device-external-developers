@@ -18,7 +18,7 @@
               "maxValue": 700000.0,
               "precision": 0,
               "unitName": "Па",
-              "unitNameOffset": 0,
+              "unitNameOffset": 1,
               "calibrationPoints": 2
             },
             {
@@ -26,7 +26,7 @@
               "maxValue": 350000.0,
               "precision": 0,
               "unitName": "Па",
-              "unitNameOffset": 0,
+              "unitNameOffset": 1,
               "calibrationPoints": 0
             }
           ],

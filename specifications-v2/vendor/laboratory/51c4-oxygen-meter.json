@@ -1,0 +1,13 @@
+{
+    "$schema": "../../schema/laboratory-schema.json",
+    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+    "title": "Измеритель кислорода",
+    "type": "51c4",
+    "modules": {
+      "5011": {
+        "#include": "specifications/vendor/laboratory/sensor/5026-oxygen-meter.json",
+        "title": "Концентрация кислорода"
+      }
+
+    }
+  }

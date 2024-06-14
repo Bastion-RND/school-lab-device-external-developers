@@ -1,12 +1,12 @@
 {
     "$schema": "../../../schema/sensor-schema.json",
     "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Магнитная индукция",
+    "title": "Счетчик капель",
     "parameters": {
         "0b00": {
           "meta": {
             "valueLabel": [
-              "Индукция магнитного поля"
+              "Капли"
             ]
           }
         },
@@ -14,16 +14,16 @@
           "meta": {
             "range": [
               {
-                "minValue": -0.175,
-                "maxValue": 0.175,
-                "precision": 2,
-                "unitName": "Тл",
-                "unitNameOffset": 1,
-                "calibrationPoints": 2
-              }
+                "minValue": 0.0,
+                "maxValue": 4294967295,
+                "precision": 0,
+                "unitName": "кпл",
+                "unitNameOffset": 0,
+                "calibrationPoints": 0
+              }                          
             ],
             "valueLabel": [
-              "Индукция магнитного поля"
+              "Капли"
             ],
             "parameterGroup": [
               "SENSOR"
@@ -31,10 +31,10 @@
           }
         }
     },
-    "type": "5007",
+    "type": "501a",
     "meta": {
       "ble": {
-        "characteristicUuid": "ba575007-eca0-11ec-8ea0-1337ac062022"
+        "characteristicUuid": "ba57501a-eca0-11ec-8ea0-1337ac062022"
       }
     }
     }

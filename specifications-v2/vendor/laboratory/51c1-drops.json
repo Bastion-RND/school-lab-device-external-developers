@@ -1,0 +1,13 @@
+{
+    "$schema": "../../schema/laboratory-schema.json",
+    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+    "title": "Счетчик капель",
+    "type": "51c1",
+    "modules": {
+      "501a": {
+        "#include": "specifications/vendor/laboratory/sensor/501a-drop-counter.json",
+        "title": "Устройство подсчета капель на штатив"
+      }
+
+    }
+  }

@@ -1,0 +1,48 @@
+{
+    "$schema": "../../../schema/sensor-schema.json",
+    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+    "title": "Концентрация кислорода",
+    "parameters": {
+        "0b00": {
+          "meta": {
+            "valueLabel": [
+              "Концентрация O2"
+            ]
+          }
+        },
+        "8b01": {
+          "meta": {
+            "range": [
+              {
+                "minValue": 0.0,
+                "maxValue": 100.0,
+                "precision": 1,
+                "unitName": "%",
+                "unitNameOffset": 0,
+                "calibrationPoints": 0
+              },
+              {
+                "minValue": 10.0,
+                "maxValue": 30.0,
+                "precision": 1,
+                "unitName": "%",
+                "unitNameOffset": 0,
+                "calibrationPoints": 0
+              }              
+            ],
+            "valueLabel": [
+              "Кислород"
+            ],
+            "parameterGroup": [
+              "SENSOR"
+            ]
+          }
+        }
+    },
+    "type": "5026",
+    "meta": {
+      "ble": {
+        "characteristicUuid": "ba575026-eca0-11ec-8ea0-1337ac062022"
+      }
+    }
+    }

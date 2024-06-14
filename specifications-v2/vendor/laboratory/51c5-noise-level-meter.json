@@ -1,0 +1,13 @@
+{
+    "$schema": "../../schema/laboratory-schema.json",
+    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+    "title": "Измеритель уровня шума",
+    "type": "51c5",
+    "modules": {
+        "5014": { 
+            "#include": "specifications/vendor/laboratory/sensor/5014-noise-level.json",
+            "title": "Уровень шума"
+          }
+          
+    }
+  }

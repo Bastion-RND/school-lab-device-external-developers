@@ -1,0 +1,20 @@
+{
+    "$schema": "../../schema/laboratory-schema.json",
+    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+    "title": "ОПС",
+    "type": "51c0",
+    "modules": {
+      "5002": {
+        "#include": "specifications/vendor/laboratory/sensor/5002-air-temperature.json",
+        "title": "Температура воздуха"
+      },        
+      "5003": {
+        "#include": "specifications/vendor/laboratory/sensor/5003-relative-humidity.json",
+        "title": "Относительная влажность воздуха"
+      },
+      "5004": {
+        "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
+        "title": "Уровень освещенности"
+      }
+    }
+  }
