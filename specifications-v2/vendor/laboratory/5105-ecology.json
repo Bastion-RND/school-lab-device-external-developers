@@ -35,13 +35,13 @@
       "5004": {
         "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
         "title": "Уровень освещенности"
-      },      
+      },
       "501d": {
         "#include": "specifications/vendor/laboratory/sensor/501d-nephelometer.json",
         "title": "Мутность раствора"
       },
       "500c": {
-        "#include": "specifications/vendor/laboratory/sensor/500c-galvanometer.json",
+        "#include": "specifications/vendor/laboratory/sensor/500c-optical-density.json",
         "title": "Оптическая плотность среды"
       },
       "5016": {
@@ -51,22 +51,22 @@
       "5027": {
         "#include": "specifications/vendor/laboratory/sensor/5027-carbon-monoxide-concentration.json",
         "title": "Концентрация угарного газа"
-      }, 
-      "5020": { 
+      },
+      "5020": {
         "#include": "specifications/vendor/laboratory/sensor/5020-volatile-organic-compounds.json",
         "title": "Концентрация ЛОВ"
       },
-      "5017": { 
+      "5017": {
         "#include": "specifications/vendor/laboratory/sensor/5017-nitrate-ion-concentration.json",
         "title": "Концентрация нитрат-ионов"
       },
-      "5018": { 
+      "5018": {
         "#include": "specifications/vendor/laboratory/sensor/5018-chloride-ion-concentration.json",
         "title": "Концентрация нитрат-ионов"
       },
-      "5014": { 
+      "5014": {
         "#include": "specifications/vendor/laboratory/sensor/5014-noise-level.json",
         "title": "Уровень шума"
-      }                          
+      }
     }
   }

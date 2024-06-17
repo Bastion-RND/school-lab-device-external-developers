@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Оптическая плотность",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Оптическая плотность среды"
+        ]
+      }
+    },
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "title": "λ 525нм",
+            "minValue": 0.0,
+            "maxValue": 2.0,
+            "precision": 3,
+            "unitName": "D",
+            "unitNameOffset": 1,
+            "calibrationPoints": 0
+          },
+          {
+            "title": "λ 470нм",
+            "minValue": 0.0,
+            "maxValue": 2.0,
+            "precision": 3,
+            "unitName": "D",
+            "unitNameOffset": 1,
+            "calibrationPoints": 0
+          },
+          {
+            "title": "λ 630нм",
+            "minValue": 0.0,
+            "maxValue": 2.0,
+            "precision": 3,
+            "unitName": "D",
+            "unitNameOffset": 1,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Длина волны"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    }
+  },
+  "type": "500f",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba57500f-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
+}

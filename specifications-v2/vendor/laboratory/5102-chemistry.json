@@ -13,7 +13,7 @@
         "title": "Мутность раствора"
       },
       "500c": {
-        "#include": "specifications/vendor/laboratory/sensor/500c-galvanometer.json",
+        "#include": "specifications/vendor/laboratory/sensor/500c-optical-density.json",
         "title": "Оптическая плотность среды"
       },
       "5001": {

@@ -297,6 +297,9 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
+              "title": {
+                "$ref": "#/$defs/title"
+              },
               "minValue": {
                 "$ref": "#/$defs/integerOrNumber"
               },
