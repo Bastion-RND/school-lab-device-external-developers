@@ -9,7 +9,7 @@
         "title": "Водородный показатель (pH)"
       },
       "5001": {
-        "#include": "specifications/vendor/laboratory/sensor/5001-temreture-thermocouple.json",
+        "#include": "specifications/vendor/laboratory/sensor/5001-thermocouple.json",
         "title": "Температура (ЩУП)"
       },
       "5002": {
