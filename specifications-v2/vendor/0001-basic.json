@@ -8,9 +8,9 @@
     }
   },
   "meta": {
-    "about": "about-bastion.html",
+    "about": "about-basic.html",
     "vendor": {
-      "target": "bastion",
+      "target": "basic",
       "name": "Бастион",
       "logo": "bastion.svg"
     },
