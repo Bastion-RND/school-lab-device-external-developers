@@ -27,6 +27,9 @@
       },
       "android": {
         "appId": "com.example.vendor"
+      },
+      "pwa": {
+        "appId": "com.example.vendor"
       }
     }
   }

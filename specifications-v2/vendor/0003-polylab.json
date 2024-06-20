@@ -1,17 +1,20 @@
 {
   "$schema": "../schema/vendor-schema.json",
   "#include": "specifications/vendor/abstract-vendor.json",
-  "title": "Бастион: Школьная лаборатория",
-  "description": "Школьная лаборатория - программно-аппаратный комплекс, для проведения лабораторных испытаний"
+  "title": "Полимедиа: Полилаб",
+  "description": "Полилаб - программно-аппаратный комплекс, для проведения лабораторных испытаний",
   "laboratories": {
     "5101": {
-      "#include": "specifications/vendor/laboratory/5101-physics.json"
+      "#include": "specifications/vendor/laboratory/5101-physics.json",
+      "color": "#017BC2"
     },
     "5102": {
-      "#include": "specifications/vendor/laboratory/5102-chemistry.json"
+      "#include": "specifications/vendor/laboratory/5102-chemistry.json",
+      "color": "#009E96"
     },
     "5103": {
-      "#include": "specifications/vendor/laboratory/5103-biology.json"
+      "#include": "specifications/vendor/laboratory/5103-biology.json",
+      "color": "#8BC34A"
     },
     "5104":  {
       "#include": "specifications/vendor/laboratory/5104-physiology.json"
@@ -39,31 +42,31 @@
     }
   },
   "meta": {
-    "about": "about-basic.html",
+    "about": "about-polylab.html",
     "vendor": {
-      "target": "basic",
-      "name": "Бастион",
-      "logo": "basic.svg"
+      "target": "polylab",
+      "name": "Полимедиа",
+      "logo": "polylab.svg"
     },
     "product": {
-      "name": "Школьная лаборатория",
-      "logo": "basic.svg"
+      "name": "Полилаб",
+      "logo": "polylab.svg"
     },
     "build": {
       "windows": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.polylab"
       },
       "linux": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.polylab"
       },
       "mac": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.polylab"
       },
       "android": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.polylab"
       },
       "pwa": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.polylab"
       }
     }
   }

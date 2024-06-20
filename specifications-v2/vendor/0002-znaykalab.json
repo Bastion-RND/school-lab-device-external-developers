@@ -1,17 +1,20 @@
 {
   "$schema": "../schema/vendor-schema.json",
   "#include": "specifications/vendor/abstract-vendor.json",
-  "title": "Бастион: Школьная лаборатория",
-  "description": "Школьная лаборатория - программно-аппаратный комплекс, для проведения лабораторных испытаний"
+  "title": "Познайкино: ЗнайкаЛАБ",
+  "description": "ЗнайкаЛАБ - программно-аппаратный комплекс, для проведения лабораторных испытаний",
   "laboratories": {
     "5101": {
-      "#include": "specifications/vendor/laboratory/5101-physics.json"
+      "#include": "specifications/vendor/laboratory/5101-physics.json",
+      "color": "#017BC2"
     },
     "5102": {
-      "#include": "specifications/vendor/laboratory/5102-chemistry.json"
+      "#include": "specifications/vendor/laboratory/5102-chemistry.json",
+      "color": "#009E96"
     },
     "5103": {
-      "#include": "specifications/vendor/laboratory/5103-biology.json"
+      "#include": "specifications/vendor/laboratory/5103-biology.json",
+      "color": "#8BC34A"
     },
     "5104":  {
       "#include": "specifications/vendor/laboratory/5104-physiology.json"
@@ -39,31 +42,31 @@
     }
   },
   "meta": {
-    "about": "about-basic.html",
+    "about": "about-znaykalab.html",
     "vendor": {
-      "target": "basic",
-      "name": "Бастион",
-      "logo": "basic.svg"
+      "target": "znaykalab",
+      "name": "Познайкино",
+      "logo": "znaykalab.svg"
     },
     "product": {
-      "name": "Школьная лаборатория",
-      "logo": "basic.svg"
+      "name": "ЗнайкаЛАБ",
+      "logo": "znaykalab.svg"
     },
     "build": {
       "windows": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.znaykalab"
       },
       "linux": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.znaykalab"
       },
       "mac": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.znaykalab"
       },
       "android": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.znaykalab"
       },
       "pwa": {
-        "appId": "ru.bast.schoollab"
+        "appId": "ru.znaykalab"
       }
     }
   }
