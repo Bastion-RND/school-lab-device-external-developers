@@ -2,7 +2,7 @@
   "$schema": "../schema/vendor-schema.json",
   "#include": "specifications/vendor/abstract-vendor.json",
   "title": "Бастион: Школьная лаборатория",
-  "description": "Школьная лаборатория - программно-аппаратный комплекс, для проведения лабораторных испытаний"
+  "description": "Школьная лаборатория - программно-аппаратный комплекс, для проведения лабораторных испытаний",
   "laboratories": {
     "5101": {
       "#include": "specifications/vendor/laboratory/5101-physics.json"
