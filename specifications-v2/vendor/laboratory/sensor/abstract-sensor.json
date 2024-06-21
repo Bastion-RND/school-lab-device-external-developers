@@ -110,7 +110,12 @@
       "valueType": "UINT32",
       "defaultValue": [
         0
-      ]
+      ],
+      "meta": {
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
     },
     "8b01": {
       "title": "Диапазон измерения",
@@ -147,7 +152,12 @@
       "defaultValue": [
         0.0,
         0.0
-      ]
+      ],
+      "meta": {
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
     }
   }
 }

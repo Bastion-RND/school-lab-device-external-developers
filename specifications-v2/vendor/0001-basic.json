@@ -5,19 +5,24 @@
   "description": "Школьная лаборатория - программно-аппаратный комплекс, для проведения лабораторных испытаний",
   "laboratories": {
     "5101": {
-      "#include": "specifications/vendor/laboratory/5101-physics.json"
+      "#include": "specifications/vendor/laboratory/5101-physics.json",
+      "title": "Физика"
     },
     "5102": {
-      "#include": "specifications/vendor/laboratory/5102-chemistry.json"
+      "#include": "specifications/vendor/laboratory/5102-chemistry.json",
+      "title": "Химия"
     },
     "5103": {
-      "#include": "specifications/vendor/laboratory/5103-biology.json"
+      "#include": "specifications/vendor/laboratory/5103-biology.json",
+      "title": "Биология"
     },
     "5104":  {
-      "#include": "specifications/vendor/laboratory/5104-physiology.json"
+      "#include": "specifications/vendor/laboratory/5104-physiology.json",
+      "title": "Физиология"
     },
     "5105":  {
-      "#include": "specifications/vendor/laboratory/5105-ecology.json"
+      "#include": "specifications/vendor/laboratory/5105-ecology.json",
+      "title": "Экология"
     },
     "51c0":  {
       "#include": "specifications/vendor/laboratory/51c0-ops.json"

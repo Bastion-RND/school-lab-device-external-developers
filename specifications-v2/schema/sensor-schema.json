@@ -284,6 +284,15 @@
             "string",
             "array"
           ]
+        },
+        "meta": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "parameterGroup": {
+              "$ref": "#/$defs/parameterGroup"
+            }
+          }
         }
       }
     },
@@ -413,6 +422,15 @@
             "string",
             "array"
           ]
+        },
+        "meta": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "parameterGroup": {
+              "$ref": "#/$defs/parameterGroup"
+            }
+          }
         }
       }
     }

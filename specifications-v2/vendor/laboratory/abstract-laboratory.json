@@ -19,18 +19,18 @@
       "title": "Школьная лаборатория, смарт-модуль",
       "description": null,
       "parameters": {
-        "0003": {
-          "title": "UUID устройства",
+        "0002": {
+          "title": "Тип устройства",
           "description": null,
           "readonly": true,
           "valueType": "STRING",
-          "defaultValue": "00000000-0000-0000-0000-000000000000",
+          "defaultValue": "Лаборатория",
           "meta": {
             "sortOrder": 0,
             "parameterGroup": [
               "SYSTEM"
             ],
-            "configPath": "#/deviceUuid",
+            "configPath": "#/deviceType",
             "pollPeriod": 0,
             "ble": {
               "characteristicUuid": "ba571f23-eca0-11ec-8ea0-1337ac062022"
