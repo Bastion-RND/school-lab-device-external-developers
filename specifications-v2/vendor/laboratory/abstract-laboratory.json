@@ -15,7 +15,6 @@
   ],
   "modules": {
     "0": {
-      "type": "5200",
       "title": "Школьная лаборатория, смарт-модуль",
       "description": null,
       "parameters": {
@@ -109,6 +108,30 @@
             }
           }
         },
+        "800a": {
+          "title": "Пользовательское имя устройства",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "USB Хаб",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/customTitle",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba571f2a-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        }
+      }
+    },
+    "1f19": {
+      "title": "Батарея/Аккумулятор",
+      "description": null,
+      "parameters": {
         "003c": {
           "title": "Уровень заряда батареи",
           "description": null,
@@ -191,24 +214,6 @@
             ],
             "configPath": "#/battery/error",
             "pollPeriod": 1000
-          }
-        },
-        "800a": {
-          "title": "Пользовательское имя устройства",
-          "description": null,
-          "readonly": false,
-          "valueType": "STRING",
-          "defaultValue": "USB Хаб",
-          "meta": {
-            "sortOrder": 0,
-            "parameterGroup": [
-              "SYSTEM"
-            ],
-            "configPath": "#/customTitle",
-            "pollPeriod": 0,
-            "ble": {
-              "characteristicUuid": "ba571f2a-eca0-11ec-8ea0-1337ac062022"
-            }
           }
         }
       }
