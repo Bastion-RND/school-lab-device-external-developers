@@ -150,10 +150,7 @@
               "BATTERY"
             ],
             "configPath": "#/battery/level",
-            "pollPeriod": 30000,
-            "ble": {
-              "characteristicUuid": "ba571f19-eca0-11ec-8ea0-1337ac062022"
-            }
+            "pollPeriod": 30000
           }
         },
         "003d": {
@@ -215,6 +212,11 @@
             "configPath": "#/battery/error",
             "pollPeriod": 1000
           }
+        }
+      },
+      "meta": {
+        "ble": {
+          "characteristicUuid": "ba571f19-eca0-11ec-8ea0-1337ac062022"
         }
       }
     }

@@ -200,11 +200,27 @@
             }
           },
           "minProperties": 1
+        },
+        "meta": {
+          "ble": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "characteristicUuid": {
+                "$ref": "#/$defs/uuid128"
+              },
+              "descriptorUuid": {
+                "$ref": "#/$defs/uuid16"
+              }
+            },
+            "required": [
+              "characteristicUuid"
+            ]
+          }
         }
       },
       "required": [
-        "title",
-        "parameters"
+        "title"
       ]
     },
     "sensorModule": {
