@@ -467,9 +467,6 @@
           "$ref": "#/$defs/sensorValue"
         },
         "0b01": {
-          "$ref": "#/$defs/sensorStage"
-        },
-        "0b02": {
           "$ref": "#/$defs/sensorError"
         },
         "8b00": {
@@ -479,6 +476,9 @@
           "$ref": "#/$defs/sensorRange"
         },
         "8b02": {
+          "$ref": "#/$defs/sensorStage"
+        },
+        "8b03": {
           "$ref": "#/$defs/sensorCalibration"
         }
       }
