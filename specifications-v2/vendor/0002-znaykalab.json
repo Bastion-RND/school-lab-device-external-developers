@@ -5,7 +5,17 @@
   "description": "ЗнайкаЛАБ - программно-аппаратный комплекс, для проведения лабораторных испытаний",
   "laboratories": {
     "5101": {
-      "#include": "specifications/vendor/laboratory/5101-physics.json"
+      "#include": "specifications/vendor/laboratory/5101-physics.json",
+      "alias": [
+        {
+          "title": "Математика: Средний уровень",
+          "color": "#0000ff"
+        },
+        {
+          "title": "Математика: Младший уровень",
+          "color": "#00ff00"
+        }
+      ]
     },
     "5102": {
       "#include": "specifications/vendor/laboratory/5102-chemistry.json"

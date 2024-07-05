@@ -58,6 +58,30 @@
         },
         "lifeCycle": {
           "$ref": "#/$defs/lifeCycle"
+        },
+        "alias": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "$ref": "#/$defs/title"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]+$"
+              },
+              "lifeCycle": {
+                "$ref": "#/$defs/lifeCycle"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
         }
       },
       "required": [
