@@ -1,6 +1,7 @@
 {
   "$schema": "../../schema/laboratory-schema.json",
   "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+  "icon": "laboratories/biology.svg",
   "title": "Биология",
   "type": "5103",
   "modules": {

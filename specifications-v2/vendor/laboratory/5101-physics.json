@@ -1,6 +1,7 @@
 {
   "$schema": "../../schema/laboratory-schema.json",
   "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+  "icon": "laboratories/physics.svg",
   "title": "Физика",
   "type": "5101",
   "modules": {

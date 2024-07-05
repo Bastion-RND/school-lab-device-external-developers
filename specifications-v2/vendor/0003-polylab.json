@@ -7,7 +7,6 @@
     "5101": {
       "#include": "specifications/vendor/laboratory/5101-physics.json",
       "color": "#017BC2",
-      "icon": "laboratories/physics.svg",
       "alias": [
         {
           "title": "Естествознание СШ тип 1"
@@ -21,7 +20,6 @@
     "5102": {
       "#include": "specifications/vendor/laboratory/5102-chemistry.json",
       "color": "#009E96",
-      "icon": "laboratories/chemistry.svg",
       "alias": [
         {
           "title": "Естествознание НШ тип 2"
@@ -34,7 +32,6 @@
     "5103": {
       "#include": "specifications/vendor/laboratory/5103-biology.json",
       "color": "#8BC34A",
-      "icon": "laboratories/biology.svg",
       "alias": [
         {
           "title": "Естествознание НШ тип 3"

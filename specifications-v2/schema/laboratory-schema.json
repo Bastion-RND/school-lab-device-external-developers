@@ -19,6 +19,10 @@
       "minLength": 36,
       "maxLength": 36
     },
+    "image": {
+      "type": "string",
+      "pattern": "^([0-9a-z-./])+\\.(svg|png)$"
+    },
     "title": {
       "type": "string",
       "minLength": 0
@@ -250,6 +254,9 @@
     },
     "lifeCycle": {
       "$ref": "#/$defs/lifeCycle"
+    },
+    "icon": {
+      "$ref": "#/$defs/image"
     },
     "updaterReleaseType": {
       "type": "string",
