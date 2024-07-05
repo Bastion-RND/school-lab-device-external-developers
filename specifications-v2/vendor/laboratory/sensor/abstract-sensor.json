@@ -10,7 +10,7 @@
       "readonly": true,
       "valueType": "FLOAT32",
       "defaultValue": [
-        0.0
+        0
       ],
       "meta": {
         "valueLabel": [
@@ -97,8 +97,8 @@
       "meta": {
         "range": [
           {
-            "minValue": 0.0,
-            "maxValue": 0.0,
+            "minValue": 0,
+            "maxValue": 0,
             "precision": 0,
             "unitName": "",
             "unitNameOffset": 0,
@@ -150,8 +150,8 @@
       "readonly": false,
       "valueType": "FLOAT32",
       "defaultValue": [
-        0.0,
-        0.0
+        0,
+        0
       ],
       "meta": {
         "parameterGroup": [

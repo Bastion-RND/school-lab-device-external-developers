@@ -14,8 +14,8 @@
       "meta": {
         "range": [
           {
-            "minValue": -40.0,
-            "maxValue": 125.0,
+            "minValue": -40,
+            "maxValue": 125,
             "precision": 0,
             "unitName": "лк",
             "unitNameOffset": 1,

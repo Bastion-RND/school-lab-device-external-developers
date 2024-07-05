@@ -38,6 +38,11 @@
       "#include": "specifications/vendor/laboratory/51c5-noise-level-meter.json"
     }
   },
+  "devices": {
+    "51a0": {
+      "#include": "specifications/vendor/device/51a0-usb-ble-dongle.json"
+    }
+  },
   "meta": {
     "about": "about-basic.html",
     "vendor": {

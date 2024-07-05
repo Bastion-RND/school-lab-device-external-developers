@@ -93,6 +93,27 @@
       "required": [
         "#include"
       ]
+    },
+    "device": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "#include": {
+          "$ref": "#/$defs/json"
+        },
+        "title": {
+          "$ref": "#/$defs/title"
+        },
+        "description": {
+          "$ref": "#/$defs/description"
+        },
+        "lifeCycle": {
+          "$ref": "#/$defs/lifeCycle"
+        }
+      },
+      "required": [
+        "#include"
+      ]
     }
   },
   "type": "object",
@@ -116,6 +137,15 @@
       "patternProperties": {
         "^[0-9a-f]+$": {
           "$ref": "#/$defs/laboratory"
+        }
+      }
+    },
+    "devices": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[0-9a-f]+$": {
+          "$ref": "#/$defs/device"
         }
       }
     },

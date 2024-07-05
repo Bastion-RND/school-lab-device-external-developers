@@ -5,9 +5,9 @@
   "parameters": {
     "0b00": {
       "defaultValue": [
-        0.0,
-        0.0,
-        0.0
+        0,
+        0,
+        0
       ],
       "meta": {
         "valueLabel": [
@@ -21,32 +21,32 @@
       "meta": {
         "range": [
           {
-            "minValue": -2.0,
-            "maxValue": 2.0,
+            "minValue": -2,
+            "maxValue": 2,
             "precision": 2,
             "unitName": "g",
             "unitNameOffset": 1,
             "calibrationPoints": 1
           },
           {
-            "minValue": -4.0,
-            "maxValue": 4.0,
+            "minValue": -4,
+            "maxValue": 4,
             "precision": 2,
             "unitName": "g",
             "unitNameOffset": 1,
             "calibrationPoints": 0
           },
           {
-            "minValue": -8.0,
-            "maxValue": 8.0,
+            "minValue": -8,
+            "maxValue": 8,
             "precision": 2,
             "unitName": "g",
             "unitNameOffset": 1,
             "calibrationPoints": 0
           },
           {
-            "minValue": -16.0,
-            "maxValue": 16.0,
+            "minValue": -16,
+            "maxValue": 16,
             "precision": 2,
             "unitName": "g",
             "unitNameOffset": 1,

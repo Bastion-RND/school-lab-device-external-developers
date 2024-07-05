@@ -1,0 +1,450 @@
+{
+  "$schema": "../../schema/smart-device-schema.json",
+  "title": "USB Hub (standalone) - Школьная лаборатория",
+  "description": null,
+  "type": "51a0",
+  "updaterReleaseType": "sl-usb-hub-firmware",
+  "commands": [
+    "CUSTOM_COMMAND",
+    "REFRESH_DATA",
+    "READ_FILE",
+    "WRITE_FILE",
+    "STAT_FILE",
+    "SET_TIME",
+    "REBOOT"
+  ],
+  "modules": {
+    "0": {
+      "type": "51a0",
+      "title": "Smart-module",
+      "description": null,
+      "parameters": {
+        "0003": {
+          "title": "UUID устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "00000000-0000-0000-0000-000000000000",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/uuid"
+          }
+        },
+        "0005": {
+          "title": "Серийный номер устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "0000 0000 0000 0000 0000",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/serialNumber"
+          }
+        },
+        "0006": {
+          "title": "Версия прошивки устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "0.0.1",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/firmwareRevision"
+          }
+        },
+        "0007": {
+          "title": "Ревизия платы устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "K010170",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/hardwareRevision"
+          }
+        },
+        "0009": {
+          "title": "Имя производителя устройства",
+          "description": null,
+          "readonly": true,
+          "valueType": "STRING",
+          "defaultValue": "ООО Вектор",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/manufacturer"
+          }
+        },
+        "800a": {
+          "title": "Пользовательское имя устройства",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "USB Хаб",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM"
+            ],
+            "configPath": "#/customTitle"
+          }
+        },
+        "0080": {
+          "title": "Состояние BLE Peripheral",
+          "description": null,
+          "readonly": true,
+          "valueType": "UINT8",
+          "defaultValue": [
+            0
+          ],
+          "meta": {
+            "valueLabel": [
+              "BLE Peripheral"
+            ],
+            "value": {
+              "Выключен": 0,
+              "Доступен для подключения": 1,
+              "Подключен": 2
+            },
+            "sortOrder": 0,
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/status"
+          }
+        },
+        "8080": {
+          "title": "Включение/отключение BLE Peripheral",
+          "description": null,
+          "readonly": false,
+          "valueType": "BOOL",
+          "defaultValue": [
+            false
+          ],
+          "meta": {
+            "sortOrder": 0,
+            "valueLabel": [
+              "BLE Peripheral"
+            ],
+            "value": {
+              "выкл.": false,
+              "вкл.": true
+            },
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/enable"
+          }
+        },
+        "8081": {
+          "title": "Включение/отключение BLE Advertising",
+          "description": null,
+          "readonly": false,
+          "valueType": "BOOL",
+          "defaultValue": [
+            true
+          ],
+          "meta": {
+            "sortOrder": 0,
+            "valueLabel": [
+              "BLE Advertising"
+            ],
+            "value": {
+              "выкл.": false,
+              "вкл.": true
+            },
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/advertising/enable"
+          }
+        },
+        "8082": {
+          "title": "Сокращенное имя устройства (для advertising)",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "BLE Dev",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/advertising/name/shortened"
+          }
+        },
+        "8083": {
+          "title": "Полное имя устройства (для advertising)",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "BLE Device",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/advertising/name/complete"
+          }
+        },
+        "8084": {
+          "title": "UUID16 (для advertising)",
+          "description": null,
+          "readonly": false,
+          "valueType": "UINT16",
+          "defaultValue": [
+            0
+          ],
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/advertising/uuid16"
+          }
+        },
+        "8085": {
+          "title": "UUID32 (для advertising)",
+          "description": null,
+          "readonly": false,
+          "valueType": "UINT32",
+          "defaultValue": [
+            0
+          ],
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/advertising/uuid32"
+          }
+        },
+        "8086": {
+          "title": "UUID128 (для advertising)",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/peripheral/advertising/uuid128"
+          }
+        },
+        "0088": {
+          "title": "Состояние BLE Central",
+          "description": null,
+          "readonly": true,
+          "valueType": "UINT8",
+          "defaultValue": [
+            0
+          ],
+          "meta": {
+            "valueLabel": [
+              "BLE Central"
+            ],
+            "value": {
+              "Выключен": 0,
+              "Включен": 1,
+              "Подключено периферийное устройство": 2
+            },
+            "sortOrder": 0,
+            "parameterGroup": [
+              "BLUETOOTH",
+              "UNSAFE",
+              "LOCAL"
+            ],
+            "configPath": "#/ble/central/status"
+          }
+        },
+        "0089": {
+          "title": "BLE Scan result",
+          "description": null,
+          "readonly": true,
+          "valueType": "BINARY",
+          "defaultValue": "",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "BLUETOOTH",
+              "HIDDEN"
+            ]
+          }
+        },
+        "008a": {
+          "title": "BLE Connect peripheral result",
+          "description": null,
+          "readonly": true,
+          "valueType": "BINARY",
+          "defaultValue": "",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "BLUETOOTH",
+              "HIDDEN"
+            ]
+          }
+        },
+        "008b": {
+          "title": "BLE Notify received",
+          "description": null,
+          "readonly": true,
+          "valueType": "BINARY",
+          "defaultValue": "",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "BLUETOOTH",
+              "HIDDEN"
+            ]
+          }
+        },
+        "008c": {
+          "title": "BLE Info received",
+          "description": null,
+          "readonly": true,
+          "valueType": "BINARY",
+          "defaultValue": "",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "BLUETOOTH",
+              "HIDDEN"
+            ]
+          }
+        },
+        "8088": {
+          "title": "Включение/отключение BLE Central",
+          "description": null,
+          "readonly": false,
+          "valueType": "BOOL",
+          "defaultValue": [
+            true
+          ],
+          "meta": {
+            "sortOrder": 0,
+            "valueLabel": [
+              "BLE Central"
+            ],
+            "value": {
+              "выкл.": false,
+              "вкл.": true
+            },
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/central/enable"
+          }
+        },
+        "8089": {
+          "title": "Включение/отключение BLE Scan",
+          "description": null,
+          "readonly": false,
+          "valueType": "BOOL",
+          "defaultValue": [
+            false
+          ],
+          "meta": {
+            "sortOrder": 0,
+            "valueLabel": [
+              "BLE Scan"
+            ],
+            "value": {
+              "выкл.": false,
+              "вкл.": true
+            },
+            "parameterGroup": [
+              "HIDDEN"
+            ]
+          }
+        },
+        "808a": {
+          "title": "BLE Scan duration",
+          "description": null,
+          "readonly": false,
+          "valueType": "UINT32",
+          "defaultValue": [
+            20000
+          ],
+          "meta": {
+            "sortOrder": 0,
+            "valueLabel": [
+              "BLE Scan duration"
+            ],
+            "parameterGroup": [
+              "HIDDEN"
+            ],
+            "configPath": "#/ble/central/scan/duration"
+          }
+        },
+        "808b": {
+          "title": "BLE Scan filter",
+          "description": null,
+          "readonly": false,
+          "valueType": "UINT16",
+          "defaultValue": [],
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "HIDDEN"
+            ]
+          }
+        },
+        "0090": {
+          "title": "USB Vendor ID (VID)",
+          "description": null,
+          "readonly": true,
+          "valueType": "UINT16",
+          "defaultValue": [
+            1155
+          ],
+          "meta": {
+            "valueLabel": [
+              "USB VID"
+            ],
+            "sortOrder": 0,
+            "parameterGroup": [
+              "USB"
+            ],
+            "configPath": "#/usb/vid"
+          }
+        },
+        "0091": {
+          "title": "USB Product ID (PID)",
+          "description": null,
+          "readonly": true,
+          "valueType": "UINT16",
+          "defaultValue": [
+            22336
+          ],
+          "meta": {
+            "valueLabel": [
+              "USB PID"
+            ],
+            "sortOrder": 0,
+            "parameterGroup": [
+              "USB"
+            ],
+            "configPath": "#/usb/pid"
+          }
+        }
+      }
+    }
+  }
+}

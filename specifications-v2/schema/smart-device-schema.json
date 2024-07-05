@@ -85,7 +85,8 @@
               "ELECTRICAL",
               "DISCRETE",
               "BLUETOOTH",
-              "SENSORS"
+              "SENSORS",
+              "USB"
             ]
           }
         },
@@ -190,6 +191,7 @@
             "FLAG32",
             "FLOAT32",
             "STRING",
+            "BINARY",
             "IPADDR"
           ],
           "default": "BOOL"

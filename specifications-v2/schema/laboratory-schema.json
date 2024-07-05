@@ -227,8 +227,7 @@
         "title"
       ]
     },
-    "sensorModule": {
-    }
+    "sensorModule": {}
   },
   "type": "object",
   "additionalProperties": false,

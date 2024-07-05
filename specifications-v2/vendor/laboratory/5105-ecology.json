@@ -12,49 +12,29 @@
       "#include": "specifications/vendor/laboratory/sensor/5003-relative-humidity.json",
       "title": "Относительная влажность воздуха"
     },
-    "501f": {
-      "#include": "specifications/vendor/laboratory/sensor/501f-dew-point.json",
-      "title": "Точка росы"
-    },
-    "5015": {
-      "#include": "specifications/vendor/laboratory/sensor/5015-temreture-ntc-sensor.json",
-      "title": "Температура, датчик NTC"
-    },
-    "5008": {
-      "#include": "specifications/vendor/laboratory/sensor/5008-ph-value.json",
-      "title": "Водородный показатель (pH)"
+    "5004": {
+      "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
+      "title": "Уровень освещенности"
     },
     "5005": {
       "#include": "specifications/vendor/laboratory/sensor/5005-electrical-conductivity.json",
       "title": "Электрическая проводимость"
     },
-    "5024": {
-      "#include": "specifications/vendor/laboratory/sensor/5024-ion-concentration.json",
-      "title": "Концентрация ионов"
+    "5008": {
+      "#include": "specifications/vendor/laboratory/sensor/5008-ph-value.json",
+      "title": "Водородный показатель (pH)"
     },
-    "5004": {
-      "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
-      "title": "Уровень освещенности"
+    "5014": {
+      "#include": "specifications/vendor/laboratory/sensor/5014-noise-level.json",
+      "title": "Уровень шума"
     },
-    "501d": {
-      "#include": "specifications/vendor/laboratory/sensor/501d-nephelometer.json",
-      "title": "Мутность раствора"
-    },
-    "500c": {
-      "#include": "specifications/vendor/laboratory/sensor/500c-optical-density.json",
-      "title": "Оптическая плотность среды"
+    "5015": {
+      "#include": "specifications/vendor/laboratory/sensor/5015-temreture-ntc-sensor.json",
+      "title": "Температура, датчик NTC"
     },
     "5016": {
       "#include": "specifications/vendor/laboratory/sensor/5016-soil-moisture.json",
       "title": "Влажность почвы"
-    },
-    "5027": {
-      "#include": "specifications/vendor/laboratory/sensor/5027-carbon-monoxide-concentration.json",
-      "title": "Концентрация угарного газа"
-    },
-    "5020": {
-      "#include": "specifications/vendor/laboratory/sensor/5020-volatile-organic-compounds.json",
-      "title": "Концентрация ЛОВ"
     },
     "5017": {
       "#include": "specifications/vendor/laboratory/sensor/5017-nitrate-ion-concentration.json",
@@ -64,9 +44,29 @@
       "#include": "specifications/vendor/laboratory/sensor/5018-chloride-ion-concentration.json",
       "title": "Концентрация нитрат-ионов"
     },
-    "5014": {
-      "#include": "specifications/vendor/laboratory/sensor/5014-noise-level.json",
-      "title": "Уровень шума"
+    "5020": {
+      "#include": "specifications/vendor/laboratory/sensor/5020-volatile-organic-compounds.json",
+      "title": "Концентрация ЛОВ"
+    },
+    "5024": {
+      "#include": "specifications/vendor/laboratory/sensor/5024-ion-concentration.json",
+      "title": "Концентрация ионов"
+    },
+    "5027": {
+      "#include": "specifications/vendor/laboratory/sensor/5027-carbon-monoxide-concentration.json",
+      "title": "Концентрация угарного газа"
+    },
+    "501f": {
+      "#include": "specifications/vendor/laboratory/sensor/501f-dew-point.json",
+      "title": "Точка росы"
+    },
+    "501d": {
+      "#include": "specifications/vendor/laboratory/sensor/501d-nephelometer.json",
+      "title": "Мутность раствора"
+    },
+    "500c": {
+      "#include": "specifications/vendor/laboratory/sensor/500c-optical-density.json",
+      "title": "Оптическая плотность среды"
     }
   }
 }

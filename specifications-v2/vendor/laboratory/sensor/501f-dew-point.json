@@ -14,8 +14,8 @@
       "meta": {
         "range": [
           {
-            "minValue": -60.0,
-            "maxValue": 40.0,
+            "minValue": -60,
+            "maxValue": 40,
             "precision": 1,
             "unitName": "°C",
             "unitNameOffset": 0,

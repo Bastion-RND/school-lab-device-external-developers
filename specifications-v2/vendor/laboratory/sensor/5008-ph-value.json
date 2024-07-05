@@ -14,16 +14,16 @@
       "meta": {
         "range": [
           {
-            "minValue": 0.0,
-            "maxValue": 14.0,
+            "minValue": 0,
+            "maxValue": 14,
             "precision": 2,
             "unitName": "pH",
             "unitNameOffset": 1,
             "calibrationPoints": 2
           },
           {
-            "minValue": 4.0,
-            "maxValue": 10.0,
+            "minValue": 4,
+            "maxValue": 10,
             "precision": 2,
             "unitName": "pH",
             "unitNameOffset": 1,

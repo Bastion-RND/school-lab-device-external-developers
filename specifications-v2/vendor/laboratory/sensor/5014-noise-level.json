@@ -14,8 +14,8 @@
       "meta": {
         "range": [
           {
-            "minValue": 0.0,
-            "maxValue": 2.0,
+            "minValue": 0,
+            "maxValue": 2,
             "precision": 3,
             "unitName": "Па",
             "unitNameOffset": 0,

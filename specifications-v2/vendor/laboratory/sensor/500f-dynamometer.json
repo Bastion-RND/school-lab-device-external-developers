@@ -14,8 +14,8 @@
       "meta": {
         "range": [
           {
-            "minValue": 0.0,
-            "maxValue": 50.0,
+            "minValue": 0,
+            "maxValue": 50,
             "precision": 3,
             "unitName": "кг",
             "unitNameOffset": 0,

@@ -14,8 +14,8 @@
       "meta": {
         "range": [
           {
-            "minValue": 0.0,
-            "maxValue": 100.0,
+            "minValue": 0,
+            "maxValue": 100,
             "precision": 1,
             "unitName": "%",
             "unitNameOffset": 0,

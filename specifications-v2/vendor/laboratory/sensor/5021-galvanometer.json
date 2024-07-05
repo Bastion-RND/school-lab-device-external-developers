@@ -14,16 +14,16 @@
       "meta": {
         "range": [
           {
-            "minValue": -0.250,
-            "maxValue": 0.250,
+            "minValue": -0.25,
+            "maxValue": 0.25,
             "precision": 1,
             "unitName": "А",
             "unitNameOffset": 0,
             "calibrationPoints": 1
           },
           {
-            "minValue": -0.100,
-            "maxValue": 0.100,
+            "minValue": -0.1,
+            "maxValue": 0.1,
             "precision": 1,
             "unitName": "А",
             "unitNameOffset": 0,
