@@ -6,23 +6,47 @@
   "laboratories": {
     "5101": {
       "#include": "specifications/vendor/laboratory/5101-physics.json",
+      "color": "#017BC2",
+      "icon": "laboratories/physics.svg",
       "alias": [
         {
-          "title": "Математика: Средний уровень",
-          "color": "#0000ff",
-          "icon": "/resources/icons/math-1.svg"
+          "title": "Естествознание СШ тип 1"
         },
         {
-          "title": "Математика: Младший уровень",
-          "color": "#00ff00"
+          "title": "Математика",
+          "icon": "laboratories/mathematics.svg"
         }
       ]
     },
     "5102": {
-      "#include": "specifications/vendor/laboratory/5102-chemistry.json"
+      "#include": "specifications/vendor/laboratory/5102-chemistry.json",
+      "color": "#009E96",
+      "icon": "laboratories/chemistry.svg",
+      "alias": [
+        {
+          "title": "Естествознание НШ тип 2"
+        },
+        {
+          "title": "Естествознание СШ тип 2"
+        }
+      ]
     },
     "5103": {
-      "#include": "specifications/vendor/laboratory/5103-biology.json"
+      "#include": "specifications/vendor/laboratory/5103-biology.json",
+      "color": "#8BC34A",
+      "icon": "laboratories/biology.svg",
+      "alias": [
+        {
+          "title": "Естествознание НШ тип 3"
+        },
+        {
+          "title": "География",
+          "icon": "laboratories/geography.svg"
+        },
+        {
+          "title": "ОБЖ"
+        }
+      ]
     },
     "5104": {
       "#include": "specifications/vendor/laboratory/5104-physiology.json"
