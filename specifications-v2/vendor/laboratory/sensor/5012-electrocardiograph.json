@@ -1,40 +1,40 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Электрокардиограмма",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "ЭКГ"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": 0,
-                "maxValue": 300,
-                "precision": 0,
-                "unitName": "В",
-                "unitNameOffset": 0,
-                "calibrationPoints": 0
-              }
-            ],
-            "valueLabel": [
-              "ЭКГ"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Электрокардиограмма",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "ЭКГ"
+        ]
+      }
     },
-    "type": "5012",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba575012-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0,
+            "maxValue": 300,
+            "precision": 0,
+            "unitName": "В",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "ЭКГ"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "5012",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575012-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

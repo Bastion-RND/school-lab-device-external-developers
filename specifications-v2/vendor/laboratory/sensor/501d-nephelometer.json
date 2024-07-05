@@ -1,48 +1,48 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Мутность раствора - Нефелометр",
-    "parameters": {
-      "0b00": {
-        "meta": {
-          "valueLabel": [
-            "Мутность раствора"
-          ]
-        }
-      },
-      "8b01": {
-        "meta": {
-          "range": [
-            {
-              "minValue": 0,
-              "maxValue": 20,
-              "precision": 2,
-              "unitName": "NTU",
-              "unitNameOffset": 0,
-              "calibrationPoints": 0
-            },
-            {
-              "minValue": 0,
-              "maxValue": 200,
-              "precision": 0,
-              "unitName": "NTU",
-              "unitNameOffset": 0,
-              "calibrationPoints": 0
-            }
-          ],
-          "valueLabel": [
-            "Нефелометрическая единица мутности"
-          ],
-          "parameterGroup": [
-            "SENSOR"
-          ]
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Мутность раствора - Нефелометр",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Мутность раствора"
+        ]
       }
     },
-    "type": "501d",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba57501d-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0,
+            "maxValue": 20,
+            "precision": 2,
+            "unitName": "NTU",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          },
+          {
+            "minValue": 0,
+            "maxValue": 200,
+            "precision": 0,
+            "unitName": "NTU",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Нефелометрическая единица мутности"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
-  }  
+  },
+  "type": "501d",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba57501d-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
+}

@@ -1,40 +1,40 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Температура (NTC)",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "Температура"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": -40.0,
-                "maxValue": 125.0,
-                "precision": 0,
-                "unitName": "лк",
-                "unitNameOffset": 1,
-                "calibrationPoints": 1
-              }
-            ],
-            "valueLabel": [
-              "Температура"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Температура (NTC)",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Температура"
+        ]
+      }
     },
-    "type": "5015",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba575015-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": -40.0,
+            "maxValue": 125.0,
+            "precision": 0,
+            "unitName": "лк",
+            "unitNameOffset": 1,
+            "calibrationPoints": 1
+          }
+        ],
+        "valueLabel": [
+          "Температура"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "5015",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575015-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

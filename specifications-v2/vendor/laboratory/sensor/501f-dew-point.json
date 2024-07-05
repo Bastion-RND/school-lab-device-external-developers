@@ -1,40 +1,40 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Точка росы",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "Точка росы"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": -60.0,
-                "maxValue": 40.0,
-                "precision": 1,
-                "unitName": "°C",
-                "unitNameOffset": 0,
-                "calibrationPoints": 0
-              }
-            ],
-            "valueLabel": [
-              "Точка росы"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Точка росы",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Точка росы"
+        ]
+      }
     },
-    "type": "501f",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba57501f-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": -60.0,
+            "maxValue": 40.0,
+            "precision": 1,
+            "unitName": "°C",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Точка росы"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "501f",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba57501f-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

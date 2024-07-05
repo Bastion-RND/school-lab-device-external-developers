@@ -1,8 +1,8 @@
 {
-"$schema": "../../../schema/sensor-schema.json",
-"#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-"title": "Гальванометр",
-"parameters": {
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Гальванометр",
+  "parameters": {
     "0b00": {
       "meta": {
         "valueLabel": [
@@ -38,11 +38,11 @@
         ]
       }
     }
-},
-"type": "5021",
-"meta": {
-  "ble": {
-    "characteristicUuid": "ba575021-eca0-11ec-8ea0-1337ac062022"
+  },
+  "type": "5021",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575021-eca0-11ec-8ea0-1337ac062022"
+    }
   }
-}
 }

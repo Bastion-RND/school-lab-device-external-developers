@@ -1,40 +1,40 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Измеритель ЧД на базе микрофона",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "Частота дыхания"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": 0,
-                "maxValue": 100,
-                "precision": 0,
-                "unitName": "вдох/мин",
-                "unitNameOffset": 0,
-                "calibrationPoints": 0
-              }
-            ],
-            "valueLabel": [
-              "Частота дыхания"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Измеритель ЧД на базе микрофона",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Частота дыхания"
+        ]
+      }
     },
-    "type": "501b",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba57501b-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0,
+            "maxValue": 100,
+            "precision": 0,
+            "unitName": "вдох/мин",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Частота дыхания"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "501b",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba57501b-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

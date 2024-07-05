@@ -1,13 +1,12 @@
 {
-    "$schema": "../../schema/laboratory-schema.json",
-    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
-    "title": "Измеритель углекислого газа",
-    "type": "51c3",
-    "modules": {
-      "5011": {
-        "#include": "specifications/vendor/laboratory/sensor/5011-carbon-dioxide-meter.json",
-        "title": "Двуокись углерода"
-      }
-
+  "$schema": "../../schema/laboratory-schema.json",
+  "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+  "title": "Измеритель углекислого газа",
+  "type": "51c3",
+  "modules": {
+    "5011": {
+      "#include": "specifications/vendor/laboratory/sensor/5011-carbon-dioxide-meter.json",
+      "title": "Двуокись углерода"
     }
   }
+}

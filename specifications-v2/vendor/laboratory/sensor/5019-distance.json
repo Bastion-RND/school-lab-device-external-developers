@@ -1,48 +1,48 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Измеритель расстояния",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "Расстояние"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": 0.0,
-                "maxValue": 4.0,
-                "precision": 2,
-                "unitName": "м",
-                "unitNameOffset": 0,
-                "calibrationPoints": 2
-              },
-              {
-                "minValue": 0.0,
-                "maxValue": 2.0,
-                "precision": 2,
-                "unitName": "м",
-                "unitNameOffset": 0,
-                "calibrationPoints": 0
-              }                                        
-            ],
-            "valueLabel": [
-              "Расстояние"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Измеритель расстояния",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Расстояние"
+        ]
+      }
     },
-    "type": "5019",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba575019-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0.0,
+            "maxValue": 4.0,
+            "precision": 2,
+            "unitName": "м",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          },
+          {
+            "minValue": 0.0,
+            "maxValue": 2.0,
+            "precision": 2,
+            "unitName": "м",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Расстояние"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "5019",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575019-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

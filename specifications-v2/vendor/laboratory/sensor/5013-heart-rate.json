@@ -1,40 +1,40 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Частота сердечных сокращений",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "ЧСС"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": 0,
-                "maxValue": 300,
-                "precision": 0,
-                "unitName": "уд/мин",
-                "unitNameOffset": 0,
-                "calibrationPoints": 0
-              }
-            ],
-            "valueLabel": [
-              "ЧСС"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Частота сердечных сокращений",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "ЧСС"
+        ]
+      }
     },
-    "type": "5013",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba575013-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0,
+            "maxValue": 300,
+            "precision": 0,
+            "unitName": "уд/мин",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "ЧСС"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "5013",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575013-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

@@ -1,48 +1,48 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Температура (ЩУП)",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "Температура"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": -100.0,
-                "maxValue": 1000.0,
-                "precision": 1,
-                "unitName": "°C",
-                "unitNameOffset": 0,
-                "calibrationPoints": 2
-              },
-              {
-                "minValue": -40.0,
-                "maxValue": 360.0,
-                "precision": 1,
-                "unitName": "°C",
-                "unitNameOffset": 0,
-                "calibrationPoints": 0
-              }
-            ],
-            "valueLabel": [
-              "Температура"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Температура (ЩУП)",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Температура"
+        ]
+      }
     },
-    "type": "5001",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba575001-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": -100.0,
+            "maxValue": 1000.0,
+            "precision": 1,
+            "unitName": "°C",
+            "unitNameOffset": 0,
+            "calibrationPoints": 2
+          },
+          {
+            "minValue": -40.0,
+            "maxValue": 360.0,
+            "precision": 1,
+            "unitName": "°C",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Температура"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "5001",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575001-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

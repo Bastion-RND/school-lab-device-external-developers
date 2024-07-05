@@ -1,40 +1,40 @@
 {
-    "$schema": "../../../schema/sensor-schema.json",
-    "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-    "title": "Счетчик капель",
-    "parameters": {
-        "0b00": {
-          "meta": {
-            "valueLabel": [
-              "Капли"
-            ]
-          }
-        },
-        "8b01": {
-          "meta": {
-            "range": [
-              {
-                "minValue": 0.0,
-                "maxValue": 4294967295,
-                "precision": 0,
-                "unitName": "кпл",
-                "unitNameOffset": 0,
-                "calibrationPoints": 0
-              }                          
-            ],
-            "valueLabel": [
-              "Капли"
-            ],
-            "parameterGroup": [
-              "SENSOR"
-            ]
-          }
-        }
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Счетчик капель",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Капли"
+        ]
+      }
     },
-    "type": "501a",
-    "meta": {
-      "ble": {
-        "characteristicUuid": "ba57501a-eca0-11ec-8ea0-1337ac062022"
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0.0,
+            "maxValue": 4294967295,
+            "precision": 0,
+            "unitName": "кпл",
+            "unitNameOffset": 0,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Капли"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
       }
     }
+  },
+  "type": "501a",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba57501a-eca0-11ec-8ea0-1337ac062022"
     }
+  }
+}

@@ -1,13 +1,12 @@
 {
-    "$schema": "../../schema/laboratory-schema.json",
-    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
-    "title": "Измеритель расстояния",
-    "type": "51c2",
-    "modules": {
-      "5019": {
-        "#include": "specifications/vendor/laboratory/sensor/5019-distance.json",
-        "title": "Измеритель расстояния"
-      }
-
+  "$schema": "../../schema/laboratory-schema.json",
+  "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+  "title": "Измеритель расстояния",
+  "type": "51c2",
+  "modules": {
+    "5019": {
+      "#include": "specifications/vendor/laboratory/sensor/5019-distance.json",
+      "title": "Измеритель расстояния"
     }
   }
+}

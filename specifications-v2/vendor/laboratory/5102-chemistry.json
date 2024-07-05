@@ -1,33 +1,32 @@
 {
-    "$schema": "../../schema/laboratory-schema.json",
-    "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
-    "title": "Школьная лаборатория: Химия",
-    "type": "5102",
-    "modules": {
-      "5008": {
-        "#include": "specifications/vendor/laboratory/sensor/5008-ph-value.json",
-        "title": "Водородный показатель (pH)"
-      },
-      "501d": {
-        "#include": "specifications/vendor/laboratory/sensor/501d-nephelometer.json",
-        "title": "Мутность раствора"
-      },
-      "500c": {
-        "#include": "specifications/vendor/laboratory/sensor/500c-optical-density.json",
-        "title": "Оптическая плотность среды"
-      },
-      "5001": {
-        "#include": "specifications/vendor/laboratory/sensor/5001-thermocouple.json",
-        "title": "Температура (ЩУП)"
-      },
-      "5005": {
-        "#include": "specifications/vendor/laboratory/sensor/5005-electrical-conductivity.json",
-        "title": "Электрическая проводимость"
-      },
-      "5024": {
-        "#include": "specifications/vendor/laboratory/sensor/5024-ion-concentration.json",
-        "title": "Концентрация ионов"
-      }
-
+  "$schema": "../../schema/laboratory-schema.json",
+  "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
+  "title": "Химия",
+  "type": "5102",
+  "modules": {
+    "5008": {
+      "#include": "specifications/vendor/laboratory/sensor/5008-ph-value.json",
+      "title": "Водородный показатель (pH)"
+    },
+    "501d": {
+      "#include": "specifications/vendor/laboratory/sensor/501d-nephelometer.json",
+      "title": "Мутность раствора"
+    },
+    "500c": {
+      "#include": "specifications/vendor/laboratory/sensor/500c-optical-density.json",
+      "title": "Оптическая плотность среды"
+    },
+    "5001": {
+      "#include": "specifications/vendor/laboratory/sensor/5001-thermocouple.json",
+      "title": "Температура (ЩУП)"
+    },
+    "5005": {
+      "#include": "specifications/vendor/laboratory/sensor/5005-electrical-conductivity.json",
+      "title": "Электрическая проводимость"
+    },
+    "5024": {
+      "#include": "specifications/vendor/laboratory/sensor/5024-ion-concentration.json",
+      "title": "Концентрация ионов"
     }
   }
+}

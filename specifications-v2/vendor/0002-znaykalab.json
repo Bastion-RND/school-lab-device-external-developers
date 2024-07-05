@@ -5,39 +5,36 @@
   "description": "ЗнайкаЛАБ - программно-аппаратный комплекс, для проведения лабораторных испытаний",
   "laboratories": {
     "5101": {
-      "#include": "specifications/vendor/laboratory/5101-physics.json",
-      "color": "#017BC2"
+      "#include": "specifications/vendor/laboratory/5101-physics.json"
     },
     "5102": {
-      "#include": "specifications/vendor/laboratory/5102-chemistry.json",
-      "color": "#009E96"
+      "#include": "specifications/vendor/laboratory/5102-chemistry.json"
     },
     "5103": {
-      "#include": "specifications/vendor/laboratory/5103-biology.json",
-      "color": "#8BC34A"
+      "#include": "specifications/vendor/laboratory/5103-biology.json"
     },
-    "5104":  {
+    "5104": {
       "#include": "specifications/vendor/laboratory/5104-physiology.json"
     },
-    "5105":  {
+    "5105": {
       "#include": "specifications/vendor/laboratory/5105-ecology.json"
     },
-    "51c0":  {
+    "51c0": {
       "#include": "specifications/vendor/laboratory/51c0-ops.json"
     },
-    "51c1":  {
+    "51c1": {
       "#include": "specifications/vendor/laboratory/51c1-drops.json"
     },
-    "51c2":  {
+    "51c2": {
       "#include": "specifications/vendor/laboratory/51c2-distance.json"
     },
-    "51c3":  {
+    "51c3": {
       "#include": "specifications/vendor/laboratory/51c3-carbon-dioxide-meter.json"
     },
-    "51c4":  {
+    "51c4": {
       "#include": "specifications/vendor/laboratory/51c4-oxygen-meter.json"
     },
-    "51c5":  {
+    "51c5": {
       "#include": "specifications/vendor/laboratory/51c5-noise-level-meter.json"
     }
   },
