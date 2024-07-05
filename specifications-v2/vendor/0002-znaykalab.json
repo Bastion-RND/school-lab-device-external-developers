@@ -9,7 +9,8 @@
       "alias": [
         {
           "title": "Математика: Средний уровень",
-          "color": "#0000ff"
+          "color": "#0000ff",
+          "icon": "/resources/icons/math-1.svg"
         },
         {
           "title": "Математика: Младший уровень",
