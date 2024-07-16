@@ -1,7 +1,7 @@
 {
   "vendor": {
-    "0001": "0001-basic.json",
-    "0002": "0002-znaykalab.json",
-    "0003": "0003-polylab.json"
+    "basic": "0001-basic.json",
+    "znaykalab": "0002-znaykalab.json",
+    "polylab": "0003-polylab.json"
   }
 }
