@@ -145,7 +145,53 @@
       "additionalProperties": false,
       "properties": {
         "stage": {
-          "$ref": "#/$defs/titleSource"
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "$ref": "#/$defs/title"
+              },
+              "view": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "$ref": "#/$defs/html"
+                  },
+                  "component": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "prevStage": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "minimum": 0
+                  },
+                  "nextStage": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "component",
+                  "prevStage",
+                  "nextStage"
+                ]
+              }
+            },
+            "required": [
+              "title",
+              "view"
+            ]
+          }
         },
         "valueLabel": {
           "type": "array",

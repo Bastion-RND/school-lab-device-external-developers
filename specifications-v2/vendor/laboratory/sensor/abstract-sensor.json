@@ -122,20 +122,32 @@
         0
       ],
       "meta": {
-        "stage": {
-          "0": {
+        "stage": [
+          {
             "title": "Справочная информация. Приглашение начать измерения.",
-            "source": "sensor-information.html"
+            "view": {
+              "component": "DEFAULT_INFO",
+              "prevStage": null,
+              "nextStage": 1
+            }
           },
-          "10": {
+          {
             "title": "Процесс измерения.",
-            "source": "sensor-measure.html"
+            "view": {
+              "component": "DEFAULT_MEASURE",
+              "prevStage": 0,
+              "nextStage": 2
+            }
           },
-          "20": {
+          {
             "title": "Отображение результатов измерений.",
-            "source": "sensor-display-values.html"
+            "view": {
+              "component": "DEFAULT_RESULT",
+              "prevStage": 1,
+              "nextStage": null
+            }
           }
-        },
+        ],
         "valueLabel": [
           "Стадия измерения"
         ],

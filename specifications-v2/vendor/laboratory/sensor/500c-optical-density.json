@@ -12,6 +12,9 @@
     },
     "8b01": {
       "meta": {
+        "valueLabel": [
+          "Длина волны"
+        ],
         "range": [
           {
             "title": "λ 525нм",
@@ -41,11 +44,49 @@
             "calibrationPoints": 0
           }
         ],
-        "valueLabel": [
-          "Длина волны"
-        ],
         "parameterGroup": [
           "SENSOR"
+        ]
+      }
+    },
+    "8b02": {
+      "meta": {
+        "valueLabel": [
+          "Стадия измерения"
+        ],
+        "stage": [
+          {
+            "title": "Справочная информация по измерению оптической плотности.",
+            "view": {
+              "component": "OPTICAL_DENSITY_INFO",
+              "prevStage": null,
+              "nextStage": 1
+            }
+          },
+          {
+            "title": "Измерение референтного значения.",
+            "view": {
+              "component": "OPTICAL_DENSITY_REFERENCE",
+              "prevStage": 0,
+              "nextStage": 2
+            }
+          },
+          {
+            "title": "Процесс измерения.",
+            "view": {
+              "component": "OPTICAL_DENSITY_MEASURE",
+              "prevStage": 1,
+              "nextStage": 3
+            }
+          },
+          {
+            "title": "Отображение результатов измерений.",
+            "view": {
+              "component": "OPTICAL_DENSITY_RESULT",
+              "prevStage": 2,
+              "nextStage": null
+            }
+          }
         ]
       }
     }
