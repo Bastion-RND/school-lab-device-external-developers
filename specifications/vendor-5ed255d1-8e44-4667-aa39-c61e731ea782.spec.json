@@ -43,7 +43,8 @@
       "uuid": "51C5"
     },
     "Температура ЩУП": {
-      "uuid": "51C6"
+      "uuid": "51C6",
+      "lifeCycle": "ALPHA"
     }
   },
   "sound": {
