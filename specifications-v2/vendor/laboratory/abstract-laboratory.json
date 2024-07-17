@@ -125,6 +125,44 @@
               "characteristicUuid": "ba571f2a-eca0-11ec-8ea0-1337ac062022"
             }
           }
+        },
+        "8a81": {
+          "title": "Управление цветным светодиодом",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM",
+              "LED"
+            ],
+            "configPath": "#/colorLed",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba57c1ed-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
+        },
+        "8a82": {
+          "title": "Управление аудио плеером",
+          "description": null,
+          "readonly": false,
+          "valueType": "STRING",
+          "defaultValue": "",
+          "meta": {
+            "sortOrder": 0,
+            "parameterGroup": [
+              "SYSTEM",
+              "AUDIO"
+            ],
+            "configPath": "#/colorLed",
+            "pollPeriod": 0,
+            "ble": {
+              "characteristicUuid": "ba57a001-eca0-11ec-8ea0-1337ac062022"
+            }
+          }
         }
       }
     },
