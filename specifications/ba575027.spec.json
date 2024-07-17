@@ -33,7 +33,11 @@
         "current",
         "measurements"
       ],
-      "yAxisIndex": 0
+      "yAxisIndex": 0,
+      "errors": {
+        "0": "Нет ошибки",
+        "1": "Датчик не подключен"
+      }
     }
   ]
 }
