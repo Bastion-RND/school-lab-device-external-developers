@@ -1,0 +1,17 @@
+{
+  "$schema": "schema/multisensor.schema.json",
+  "uuid": "000051C6-0000-1000-8000-00805f9b34fb",
+  "title": "Температура ЩУП",
+  "advName": "Tempreture #",
+  "moduleName": "Tempreture",
+  "sensors": [
+    {
+      "description": "Температура (термопара)",
+      "uuid": "a3cf0271-06e1-46c7-8407-988ad944c80c",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 102
+      }
+    }
+  ]
+}

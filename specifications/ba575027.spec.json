@@ -1,0 +1,39 @@
+{
+  "$schema": "schema/sensor.schema.json",
+  "uuid": "a3cf0271-06e1-46c7-8407-988ad944c80c",
+  "description": "Температура (термопара)",
+  "info": {
+    "title": "Температура (ЩУП)",
+    "sortOrder": -1
+  },
+  "yAxis": [
+    {
+      "unit": "°C",
+      "title": "Температура",
+      "range": {
+        "list": [
+          {
+            "min": -270.0,
+            "max": 1372.0,
+            "precision": 2.2,
+            "factor": "NORMAL",
+            "calibrationPointsMin": 0
+          }
+        ],
+        "defaultIndex": 0
+      }
+    }
+  ],
+  "value": [
+    {
+      "title": "Термопара",
+      "options": [
+        "chart",
+        "gauge",
+        "current",
+        "measurements"
+      ],
+      "yAxisIndex": 0
+    }
+  ]
+}
