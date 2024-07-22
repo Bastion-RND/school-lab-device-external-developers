@@ -68,7 +68,7 @@
         "sensorType": 1,
         "soundNumber": 104
       }
-    },    
+    },
     {
       "description": "Мутность раствора",
       "uuid": "ba57501d-eca0-11ec-8ea0-1337ac062022",
@@ -99,6 +99,14 @@
       "sound": {
         "sensorType": 0,
         "soundNumber": 139
+      }
+    },
+    {
+      "description": "Концентрация углекислого газа",
+      "uuid": "ba575011-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 117
       }
     },
     {
