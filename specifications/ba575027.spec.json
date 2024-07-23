@@ -1,0 +1,46 @@
+{
+  "$schema": "schema/sensor.schema.json",
+  "uuid": "ba575027-eca0-11ec-8ea0-1337ac062022",
+  "description": "Концентрация угарного газа",
+  "info": {
+    "title": "Концентрация угарного газа",
+    "sortOrder": -1
+  },
+  "yAxis": [
+    {
+      "unit": "ppm",
+      "title": "CO",
+      "range": {
+        "list": [
+          {
+            "min": 0,
+            "max": 1000,
+            "precision": 0,
+            "factor": "NORMAL",
+            "calibrationPointsMin": 2
+          }
+        ],
+        "defaultIndex": 0
+      }
+    }
+  ],
+  "stage": [
+    "Справочная информация. Приглашение начать измерения.",
+    "Нагрев датчика",
+    "Измерение концентрации CO",
+    "Отображение результатов измерений"
+  ],
+  "value": [
+    {
+      "title": "CO",
+      "options": [
+        "gauge"
+      ],
+      "yAxisIndex": 0,
+      "errors": {
+        "0": "Нет ошибки",
+        "1": "Датчик не подключен"
+      }
+    }
+  ]
+}
