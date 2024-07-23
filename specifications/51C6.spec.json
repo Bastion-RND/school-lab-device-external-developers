@@ -2,8 +2,8 @@
   "$schema": "schema/multisensor.schema.json",
   "uuid": "000051C6-0000-1000-8000-00805f9b34fb",
   "title": "Температура ЩУП (Тест)",
-  "advName": "Tempreture #",
-  "moduleName": "Tempreture",
+  "advName": "Thermocouple #",
+  "moduleName": "Thermocouple",
   "sensors": [
     {
       "description": "Температура (термопара)",

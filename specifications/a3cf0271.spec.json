@@ -15,7 +15,7 @@
           {
             "min": -270.0,
             "max": 1372.0,
-            "precision": 2.2,
+            "precision": 2,
             "factor": "NORMAL",
             "calibrationPointsMin": 0
           }
