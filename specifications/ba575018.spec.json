@@ -8,12 +8,12 @@
   },
   "yAxis": [
     {
-      "unit": "м/л",
+      "unit": "моль/л",
       "title": "Хлорид-ионы",
       "range": {
         "list": [
           {
-            "min": 0.00001,
+            "min": 0.00003,
             "max": 1.0,
             "precision": 5,
             "factor": "NORMAL",
