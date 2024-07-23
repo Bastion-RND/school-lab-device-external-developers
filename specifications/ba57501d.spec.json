@@ -14,30 +14,26 @@
         "list": [
           {
             "min": 0,
-            "max": 20,
-            "precision": 2,
-            "factor": "NORMAL",
-            "calibrationPointsMin": 0
-          },
-          {
-            "min": 0,
             "max": 200,
-            "precision": 0,
+            "precision": 2,
             "factor": "NORMAL",
             "calibrationPointsMin": 0
           }
         ],
-        "defaultIndex": 1
+        "defaultIndex": 0
       }
     }
+  ],
+  "stage": [
+    "Справочная информация. Приглашение начать измерения.",
+    "Однократное измерение значения.",
+    "Отображение результатов измерений"
   ],
   "value": [
     {
       "title": null,
       "options": [
-        "current",
-        "reference",
-        "measurements"
+        "gauge"
       ],
       "yAxisIndex": 0,
       "errors": {
