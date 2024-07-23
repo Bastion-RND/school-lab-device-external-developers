@@ -24,28 +24,28 @@
             "max": 5.0,
             "precision": 2,
             "factor": "NORMAL",
-            "calibrationPointsMin": 2
+            "calibrationPointsMin": 0
           },
           {
             "min": -10.0,
             "max": 10.0,
             "precision": 2,
             "factor": "NORMAL",
-            "calibrationPointsMin": 2
+            "calibrationPointsMin": 0
           },
           {
             "min": -15.0,
             "max": 15.0,
             "precision": 2,
             "factor": "NORMAL",
-            "calibrationPointsMin": 2
+            "calibrationPointsMin": 0
           },
           {
             "min": -20.0,
             "max": 20.0,
             "precision": 2,
             "factor": "NORMAL",
-            "calibrationPointsMin": 2
+            "calibrationPointsMin": 0
           }
         ],
         "defaultIndex": 0
@@ -57,15 +57,15 @@
       "range": {
         "list": [
           {
-            "min": -1.0,
-            "max": 1.0,
-            "precision": 0,
+            "min": -5.0,
+            "max": 5.00,
+            "precision": 3,
             "factor": "NORMAL",
             "calibrationPointsMin": 0
           },
           {
-            "min": -5.0,
-            "max": 5.0,
+            "min": -1.0,
+            "max": 1.00,
             "precision": 3,
             "factor": "NORMAL",
             "calibrationPointsMin": 0
