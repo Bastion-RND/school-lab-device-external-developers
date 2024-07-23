@@ -1,7 +1,7 @@
 {
   "$schema": "schema/multisensor.schema.json",
   "uuid": "000051C6-0000-1000-8000-00805f9b34fb",
-  "title": "Температура ЩУП",
+  "title": "Температура ЩУП (Тест)",
   "advName": "Tempreture #",
   "moduleName": "Tempreture",
   "sensors": [
@@ -10,7 +10,7 @@
       "uuid": "a3cf0271-06e1-46c7-8407-988ad944c80c",
       "sound": {
         "sensorType": 0,
-        "soundNumber": 102
+        "soundNumber": 100
       }
     }
   ]
