@@ -58,33 +58,25 @@
           {
             "title": "Справочная информация по измерению оптической плотности.",
             "view": {
-              "component": "OPTICAL_DENSITY_INFO",
-              "prevStage": null,
-              "nextStage": 1
+              "component": "OPTICAL_DENSITY_INFO"
             }
           },
           {
             "title": "Измерение референтного значения.",
             "view": {
-              "component": "OPTICAL_DENSITY_REFERENCE",
-              "prevStage": 0,
-              "nextStage": 2
+              "component": "OPTICAL_DENSITY_REFERENCE"
             }
           },
           {
             "title": "Процесс измерения.",
             "view": {
-              "component": "OPTICAL_DENSITY_MEASURE",
-              "prevStage": 1,
-              "nextStage": 3
+              "component": "OPTICAL_DENSITY_MEASURE"
             }
           },
           {
             "title": "Отображение результатов измерений.",
             "view": {
-              "component": "OPTICAL_DENSITY_RESULT",
-              "prevStage": 2,
-              "nextStage": null
+              "component": "OPTICAL_DENSITY_RESULT"
             }
           }
         ]

@@ -17,7 +17,7 @@
       "title": "Частота сердечных сокращений"
     },
     "5015": {
-      "#include": "specifications/vendor/laboratory/sensor/5015-temreture-ntc-sensor.json",
+      "#include": "specifications/vendor/laboratory/sensor/5015-temperature-ntc-sensor.json",
       "title": "Температура, датчик NTC"
     },
     "500b": {
