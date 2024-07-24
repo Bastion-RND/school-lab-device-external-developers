@@ -126,25 +126,19 @@
           {
             "title": "Справочная информация. Приглашение начать измерения.",
             "view": {
-              "component": "DEFAULT_INFO",
-              "prevStage": null,
-              "nextStage": 1
+              "component": "DEFAULT_INFO"
             }
           },
           {
             "title": "Процесс измерения.",
             "view": {
-              "component": "DEFAULT_MEASURE",
-              "prevStage": 0,
-              "nextStage": 2
+              "component": "DEFAULT_MEASURE"
             }
           },
           {
             "title": "Отображение результатов измерений.",
             "view": {
-              "component": "DEFAULT_RESULT",
-              "prevStage": 1,
-              "nextStage": null
+              "component": "DEFAULT_RESULT"
             }
           }
         ],

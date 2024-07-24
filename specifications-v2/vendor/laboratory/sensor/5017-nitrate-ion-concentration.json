@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/sensor-schema.json",
   "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-  "title": "Датчик нитрат-ионо",
+  "title": "Датчик нитрат-ионов",
   "parameters": {
     "0b00": {
       "meta": {

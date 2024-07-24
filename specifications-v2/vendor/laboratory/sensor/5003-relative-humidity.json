@@ -35,6 +35,11 @@
   "meta": {
     "ble": {
       "characteristicUuid": "ba575003-eca0-11ec-8ea0-1337ac062022"
-    }
+    },
+    "combinedSensorGroup": [
+      "5002",
+      "5003",
+      "501f"
+    ]
   }
 }
