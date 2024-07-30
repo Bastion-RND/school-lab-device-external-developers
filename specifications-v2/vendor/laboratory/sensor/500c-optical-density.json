@@ -83,10 +83,10 @@
       }
     }
   },
-  "type": "500f",
+  "type": "500c",
   "meta": {
     "ble": {
-      "characteristicUuid": "ba57500f-eca0-11ec-8ea0-1337ac062022"
+      "characteristicUuid": "ba57500c-eca0-11ec-8ea0-1337ac062022"
     }
   }
 }
