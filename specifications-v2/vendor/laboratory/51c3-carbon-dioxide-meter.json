@@ -2,6 +2,7 @@
   "$schema": "../../schema/laboratory-schema.json",
   "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
   "title": "Измеритель углекислого газа",
+  "icon": "laboratories/carbon-dioxide-meter.svg",
   "type": "51c3",
   "modules": {
     "5011": {

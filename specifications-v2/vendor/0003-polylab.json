@@ -9,7 +9,8 @@
       "color": "#017BC2",
       "alias": [
         {
-          "title": "Естествознание СШ тип 1"
+          "title": "Естествознание СШ тип 1",
+          "icon": "laboratories/natural-science.svg"
         },
         {
           "title": "Математика",
@@ -22,10 +23,12 @@
       "color": "#009E96",
       "alias": [
         {
-          "title": "Естествознание НШ тип 2"
+          "title": "Естествознание НШ тип 2",
+          "icon": "laboratories/natural-science.svg"
         },
         {
-          "title": "Естествознание СШ тип 2"
+          "title": "Естествознание СШ тип 2",
+          "icon": "laboratories/natural-science.svg"
         }
       ]
     },
@@ -34,14 +37,16 @@
       "color": "#8BC34A",
       "alias": [
         {
-          "title": "Естествознание НШ тип 3"
+          "title": "Естествознание НШ тип 3",
+          "icon": "laboratories/natural-science.svg"
         },
         {
           "title": "География",
           "icon": "laboratories/geography.svg"
         },
         {
-          "title": "ОБЖ"
+          "title": "ОБЖ",
+          "icon": "laboratories/fundamentals-of-life-safety.svg"
         }
       ]
     },

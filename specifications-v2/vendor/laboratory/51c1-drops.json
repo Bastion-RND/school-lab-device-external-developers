@@ -2,6 +2,7 @@
   "$schema": "../../schema/laboratory-schema.json",
   "#include": "specifications/vendor/laboratory/abstract-laboratory.json",
   "title": "Счетчик капель",
+  "icon": "laboratories/drops.svg",
   "type": "51c1",
   "modules": {
     "501a": {
