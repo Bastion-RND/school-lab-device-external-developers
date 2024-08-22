@@ -34,7 +34,7 @@
       }
     },
     "500b": {
-      "#include": "specifications/vendor/laboratory/sensor/group/502a-accelerometer.json",
+      "#include": "specifications/vendor/laboratory/sensor/group/500b-accelerometer.json",
       "title": "Ускорение по осям (XYZ)"
     }
   }
