@@ -19,6 +19,10 @@
           "title": "Уровень освещенности"
         }
       }
+    },
+    "5c07": {
+      "#include": "specifications/vendor/laboratory/sensor/group/5c07-air-condition.json",
+      "title": "Температура, влажность воздуха"
     }
   }
 }

@@ -4,30 +4,26 @@
   "icon": "laboratories/biology.svg",
   "title": "Биология",
   "type": "5103",
-  "modules": {
-    "5001": {
-      "#include": "specifications/vendor/laboratory/sensor/5001-thermocouple.json",
-      "title": "Температура (ЩУП)"
+  "sensorGroups": {
+    "standalone": {
+      "modules": {
+        "5001": {
+          "#include": "specifications/vendor/laboratory/sensor/5001-thermocouple.json",
+          "title": "Температура (ЩУП)"
+        },
+        "5004": {
+          "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
+          "title": "Уровень освещенности"
+        },
+        "5008": {
+          "#include": "specifications/vendor/laboratory/sensor/5008-ph-value.json",
+          "title": "Водородный показатель (pH)"
+        }
+      }
     },
-    "5002": {
-      "#include": "specifications/vendor/laboratory/sensor/5002-air-temperature.json",
-      "title": "Температура воздуха"
-    },
-    "5003": {
-      "#include": "specifications/vendor/laboratory/sensor/5003-relative-humidity.json",
-      "title": "Относительная влажность воздуха"
-    },
-    "5004": {
-      "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
-      "title": "Уровень освещенности"
-    },
-    "5008": {
-      "#include": "specifications/vendor/laboratory/sensor/5008-ph-value.json",
-      "title": "Водородный показатель (pH)"
-    },
-    "501f": {
-      "#include": "specifications/vendor/laboratory/sensor/501f-dew-point.json",
-      "title": "Точка росы"
+    "5c07": {
+      "#include": "specifications/vendor/laboratory/sensor/group/5c07-air-condition.json",
+      "title": "Температура, влажность, точка росы"
     }
   }
 }
