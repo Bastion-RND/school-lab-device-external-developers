@@ -16,10 +16,10 @@
       "title": "Точка росы"
     }
   },
+  "type": "5c07",
   "meta": {
     "ble": {
       "characteristicUuid": "ba575c07-eca0-11ec-8ea0-1337ac062022"
     }
-  },
-  "type": "5c07"
+  }
 }

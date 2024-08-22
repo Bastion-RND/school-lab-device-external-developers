@@ -1,6 +1,6 @@
 {
   "$schema": "../../../../schema/sensor-group-schema.json",
-  "#include": "specifications/vendor/laboratory/sensor/groups/abstract-sensor-group.json",
+  "#include": "specifications/vendor/laboratory/sensor/group/abstract-sensor-group.json",
   "title": "Ускорение (акселерометр)",
   "modules": {
     "502a": {
@@ -8,13 +8,18 @@
       "title": "Ускорение по оси X"
     },
     "502b": {
-      "#include": "specifications/vendor/laboratory/sensor/502a-accelerometer-y.json",
+      "#include": "specifications/vendor/laboratory/sensor/502b-accelerometer-y.json",
       "title": "Ускорение по оси Y"
     },
     "502c": {
-      "#include": "specifications/vendor/laboratory/sensor/502a-accelerometer-z.json",
+      "#include": "specifications/vendor/laboratory/sensor/502c-accelerometer-z.json",
       "title": "Ускорение по оси Z"
     }
   },
-  "type": "500b"
+  "type": "500b",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575c07-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
 }

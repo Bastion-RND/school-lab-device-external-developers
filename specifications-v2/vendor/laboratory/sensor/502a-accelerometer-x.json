@@ -58,12 +58,5 @@
       }
     }
   },
-  "type": "502a",
-  "meta": {
-    "combinedSensorGroup": [
-      "502a",
-      "502b",
-      "502c"
-    ]
-  }
+  "type": "502a"
 }
