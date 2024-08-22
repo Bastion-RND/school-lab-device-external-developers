@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/5028-bp-heart-rate.json",
+  "title": "Тоны Короткова",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Тон"
+        ]
+      }
+    },
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0,
+            "maxValue": 5,
+            "precision": 0,
+            "unitName": "σ",
+            "unitNameOffset": 1,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Тон"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    }
+  },
+  "type": "502d"
+}

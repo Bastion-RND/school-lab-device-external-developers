@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema/sensor-group-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/group/abstract-sensor-group.json",
+  "title": "Артериальное давление, ЧСС",
+  "modules": {
+    "501c": {
+      "#include": "specifications/vendor/laboratory/sensor/501c-blood-pressure.json",
+      "title": "Артериальное давление"
+    },
+    "502d": {
+      "#include": "specifications/vendor/laboratory/sensor/502d-bp-tone.json",
+      "title": "Тоны Короткова"
+    },
+    "502e": {
+      "#include": "specifications/vendor/laboratory/sensor/502e-bp-systolic-pressure.json",
+      "title": "Систолическое давление"
+    },
+    "502f": {
+      "#include": "specifications/vendor/laboratory/sensor/502f-bp-diastolic-pressure.json",
+      "title": "Диастолическое давление"
+    },
+    "5028": {
+      "#include": "specifications/vendor/laboratory/sensor/5028-bp-heart-rate.json",
+      "title": "ЧСС (Артериальное давление)"
+    }
+  },
+  "type": "5c0a",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba57501c-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
+}

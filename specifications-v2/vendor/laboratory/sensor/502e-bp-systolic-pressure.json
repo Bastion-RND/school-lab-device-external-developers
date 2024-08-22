@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/501c-blood-pressure.json",
+  "title": "Систолическое давление",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Систолическое давление"
+        ]
+      }
+    },
+    "8b02": {
+      "meta": {
+        "valueLabel": [
+          "Стадия измерения"
+        ],
+        "stage": [
+          {
+            "title": "Справочная информация",
+            "view": {
+              "component": "DEFAULT_INFO"
+            }
+          },
+          {
+            "title": "Ожидание данных.",
+            "view": {
+              "component": "AWAITING_DATA"
+            }
+          },
+          {
+            "title": "Ожидание данных.",
+            "view": {
+              "component": "AWAITING_DATA"
+            }
+          },
+          {
+            "title": "Ожидание данных.",
+            "view": {
+              "component": "AWAITING_DATA"
+            }
+          },
+          {
+            "title": "Отображение результатов измерений.",
+            "view": {
+              "component": "DEFAULT_RESULT"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "type": "502e"
+}

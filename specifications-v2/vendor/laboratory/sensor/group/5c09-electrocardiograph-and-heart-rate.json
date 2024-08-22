@@ -8,7 +8,7 @@
       "title": "Электрокардиограмма"
     },
     "5029": {
-      "#include": "specifications/vendor/laboratory/sensor/5029-heart-rate-electrocardiograph.json",
+      "#include": "specifications/vendor/laboratory/sensor/5029-ecg-heart-rate.json",
       "title": "ЧСС (Электрокардиограмма)"
     }
   },

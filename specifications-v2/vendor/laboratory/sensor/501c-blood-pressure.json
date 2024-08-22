@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "title": "Артериальное давление",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Давление"
+        ]
+      }
+    },
+    "8b01": {
+      "meta": {
+        "range": [
+          {
+            "minValue": 0,
+            "maxValue": 300,
+            "precision": 0,
+            "unitName": "мм рт.ст.",
+            "unitNameOffset": 1,
+            "calibrationPoints": 0
+          },
+          {
+            "minValue": 50,
+            "maxValue": 180,
+            "precision": 0,
+            "unitName": "мм рт.ст.",
+            "unitNameOffset": 1,
+            "calibrationPoints": 0
+          }
+        ],
+        "valueLabel": [
+          "Давление"
+        ],
+        "parameterGroup": [
+          "SENSOR"
+        ]
+      }
+    },
+    "8b02": {
+      "meta": {
+        "valueLabel": [
+          "Стадия измерения"
+        ],
+        "stage": [
+          {
+            "title": "Справочная информация",
+            "view": {
+              "component": "BLOOD_PRESSURE_INFO"
+            }
+          },
+          {
+            "title": "Нагнетание давления.",
+            "view": {
+              "component": "BLOOD_PRESSURE_BUILD_UP"
+            }
+          },
+          {
+            "title": "Сброс давления.",
+            "view": {
+              "component": "BLOOD_PRESSURE_RELIEF"
+            }
+          },
+          {
+            "title": "Получение данных.",
+            "view": {
+              "component": "BLOOD_PRESSURE_RECEIVE_DATA"
+            }
+          },
+          {
+            "title": "Отображение результатов измерений.",
+            "view": {
+              "component": "BLOOD_PRESSURE_RESULT"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "type": "501c"
+}

@@ -29,13 +29,17 @@
         }
       }
     },
-    "5c09": {
-      "#include": "specifications/vendor/laboratory/sensor/group/5c09-ecg-heart-rate.json",
-      "title": "Электрокардиограф"
-    },
     "500b": {
       "#include": "specifications/vendor/laboratory/sensor/group/500b-accelerometer.json",
       "title": "Ускорение по осям (XYZ)"
+    },
+    "5c09": {
+      "#include": "specifications/vendor/laboratory/sensor/group/5c09-electrocardiograph-and-heart-rate.json",
+      "title": "Электрокардиограф"
+    },
+    "5c0a": {
+      "#include": "specifications/vendor/laboratory/sensor/group/5c0a-blood-pressure-and-heart-rate.json",
+      "title": "Артериальное давление"
     }
   }
 }
