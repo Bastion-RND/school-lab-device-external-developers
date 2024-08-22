@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/sensor-group-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/group/abstract-sensor-group.json",
+  "title": "Концентрация CO2 и ЛОВ",
+  "modules": {
+    "5011": {
+      "#include": "specifications/vendor/laboratory/sensor/5011-carbon-dioxide-meter.json",
+      "title": "Концентрация CO2"
+    },
+    "5020": {
+      "#include": "specifications/vendor/laboratory/sensor/5020-volatile-organic-compounds.json",
+      "title": "Концентрация ЛОВ"
+    }
+  },
+  "type": "5c08",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575c08-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
+}

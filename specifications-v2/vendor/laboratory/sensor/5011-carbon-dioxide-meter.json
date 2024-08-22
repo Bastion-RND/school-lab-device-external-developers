@@ -47,10 +47,5 @@
       }
     }
   },
-  "type": "5011",
-  "meta": {
-    "ble": {
-      "characteristicUuid": "ba575011-eca0-11ec-8ea0-1337ac062022"
-    }
-  }
+  "type": "5011"
 }
