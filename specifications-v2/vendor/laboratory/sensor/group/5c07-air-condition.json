@@ -1,6 +1,6 @@
 {
   "$schema": "../../../../schema/sensor-group-schema.json",
-  "#include": "specifications/vendor/laboratory/sensor/groups/abstract-sensor-group.json",
+  "#include": "specifications/vendor/laboratory/sensor/group/abstract-sensor-group.json",
   "title": "Температура, влажность, точка росы",
   "modules": {
     "5002": {
