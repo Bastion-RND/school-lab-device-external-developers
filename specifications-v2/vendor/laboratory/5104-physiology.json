@@ -36,6 +36,10 @@
     "5c09": {
       "#include": "specifications/vendor/laboratory/sensor/group/5c09-ecg-heart-rate.json",
       "title": "Электрокардиограф"
+    },
+    "500b": {
+      "#include": "specifications/vendor/laboratory/sensor/group/500b-accelerometer.json",
+      "title": "Ускорение по осям (XYZ)"
     }
   }
 }
