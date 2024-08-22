@@ -37,11 +37,5 @@
       }
     }
   },
-  "type": "5029",
-  "meta": {
-    "combinedSensorGroup": [
-      "5012",
-      "5029"
-    ]
-  }
+  "type": "5029"
 }

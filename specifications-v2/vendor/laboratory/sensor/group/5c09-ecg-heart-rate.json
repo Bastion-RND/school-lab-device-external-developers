@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema/sensor-group-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/group/abstract-sensor-group.json",
+  "title": "Электрокардиограмма, ЧСС",
+  "modules": {
+    "5012": {
+      "#include": "specifications/vendor/laboratory/sensor/5012-electrocardiograph.json",
+      "title": "Электрокардиограмма"
+    },
+    "5029": {
+      "#include": "specifications/vendor/laboratory/sensor/5029-heart-rate-electrocardiograph.json",
+      "title": "ЧСС (Электрокардиограмма)"
+    }
+  },
+  "type": "5c09",
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575012-eca0-11ec-8ea0-1337ac062022"
+    }
+  }
+}

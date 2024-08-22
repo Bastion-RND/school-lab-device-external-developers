@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../../schema/sensor-schema.json",
+  "$schema": "../../../schema/sensor-schema.json",
   "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
   "title": "Электрокардиограмма",
   "parameters": {
@@ -64,14 +64,5 @@
       }
     }
   },
-  "type": "5012",
-  "meta": {
-    "ble": {
-      "characteristicUuid": "ba575012-eca0-11ec-8ea0-1337ac062022"
-    },
-    "combinedSensorGroup": [
-      "5012",
-      "5029"
-    ]
-  }
+  "type": "5012"
 }

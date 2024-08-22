@@ -11,10 +11,6 @@
           "#include": "specifications/vendor/laboratory/sensor/5004-light-level.json",
           "title": "Уровень освещенности"
         },
-        "5012": {
-          "#include": "specifications/vendor/laboratory/sensor/5012-electrocardiograph.json",
-          "title": "Электрокардиограф"
-        },
         "5013": {
           "#include": "specifications/vendor/laboratory/sensor/5013-heart-rate.json",
           "title": "Частота сердечных сокращений"
@@ -36,6 +32,10 @@
           "title": "Динамометр"
         }
       }
+    },
+    "5c09": {
+      "#include": "specifications/vendor/laboratory/sensor/group/5c09-ecg-heart-rate.json",
+      "title": "Электрокардиограф"
     }
   }
 }
