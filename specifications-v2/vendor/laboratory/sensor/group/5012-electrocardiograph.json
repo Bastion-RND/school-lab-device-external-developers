@@ -1,12 +1,12 @@
 {
-  "$schema": "../../../schema/sensor-schema.json",
+  "$schema": "../../../../schema/sensor-schema.json",
   "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-  "title": "Частота сердечных сокращений",
+  "title": "Электрокардиограмма",
   "parameters": {
     "0b00": {
       "meta": {
         "valueLabel": [
-          "ЧСС"
+          "ЭКГ"
         ]
       }
     },
@@ -17,13 +17,13 @@
             "minValue": 0,
             "maxValue": 300,
             "precision": 0,
-            "unitName": "уд/мин",
+            "unitName": "В",
             "unitNameOffset": 0,
             "calibrationPoints": 0
           }
         ],
         "valueLabel": [
-          "ЧСС"
+          "ЭКГ"
         ],
         "parameterGroup": [
           "SENSOR"
@@ -39,30 +39,39 @@
           {
             "title": "Справочная информация",
             "view": {
-              "component": "DEFAULT_INFO"
+              "component": "ELECTROCARDIOGRAPH_INFO"
             }
           },
           {
-            "title": "Ожидание данных.",
+            "title": "Процесс измерения.",
             "view": {
-              "component": "AWAITING_DATA"
+              "component": "ELECTROCARDIOGRAPH_MEASURING"
+            }
+          },
+          {
+            "title": "Передача данных.",
+            "view": {
+              "component": "ELECTROCARDIOGRAPH_TRANSFER_DATA"
             }
           },
           {
             "title": "Отображение результатов измерений.",
             "view": {
-              "component": "DEFAULT_RESULT"
+              "component": "ELECTROCARDIOGRAPH_RESULT"
             }
           }
         ]
       }
     }
   },
-
-  "type": "5013",
+  "type": "5012",
   "meta": {
     "ble": {
-      "characteristicUuid": "ba575013-eca0-11ec-8ea0-1337ac062022"
-    }
+      "characteristicUuid": "ba575012-eca0-11ec-8ea0-1337ac062022"
+    },
+    "combinedSensorGroup": [
+      "5012",
+      "5029"
+    ]
   }
 }

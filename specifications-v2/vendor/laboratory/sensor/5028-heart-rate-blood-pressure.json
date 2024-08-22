@@ -1,35 +1,8 @@
 {
   "$schema": "../../../schema/sensor-schema.json",
-  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-  "title": "Частота сердечных сокращений",
+  "#include": "specifications/vendor/laboratory/sensor/5013-heart-rate.json",
+  "title": "ЧСС (Артериальное давление)",
   "parameters": {
-    "0b00": {
-      "meta": {
-        "valueLabel": [
-          "ЧСС"
-        ]
-      }
-    },
-    "8b01": {
-      "meta": {
-        "range": [
-          {
-            "minValue": 0,
-            "maxValue": 300,
-            "precision": 0,
-            "unitName": "уд/мин",
-            "unitNameOffset": 0,
-            "calibrationPoints": 0
-          }
-        ],
-        "valueLabel": [
-          "ЧСС"
-        ],
-        "parameterGroup": [
-          "SENSOR"
-        ]
-      }
-    },
     "8b02": {
       "meta": {
         "valueLabel": [
@@ -49,6 +22,18 @@
             }
           },
           {
+            "title": "Ожидание данных.",
+            "view": {
+              "component": "AWAITING_DATA"
+            }
+          },
+          {
+            "title": "Ожидание данных.",
+            "view": {
+              "component": "AWAITING_DATA"
+            }
+          },
+          {
             "title": "Отображение результатов измерений.",
             "view": {
               "component": "DEFAULT_RESULT"
@@ -58,11 +43,7 @@
       }
     }
   },
-
-  "type": "5013",
+  "type": "5028",
   "meta": {
-    "ble": {
-      "characteristicUuid": "ba575013-eca0-11ec-8ea0-1337ac062022"
-    }
   }
 }

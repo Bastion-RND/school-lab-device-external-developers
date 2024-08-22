@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/sensor-schema.json",
-  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "#include": "specifications/vendor/laboratory/sensor/5002-air-condition-temperature.json",
   "title": "Относительная влажность воздуха",
   "parameters": {
     "0b00": {
@@ -31,15 +31,5 @@
       }
     }
   },
-  "type": "5003",
-  "meta": {
-    "ble": {
-      "characteristicUuid": "ba575003-eca0-11ec-8ea0-1337ac062022"
-    },
-    "combinedSensorGroup": [
-      "5002",
-      "5003",
-      "501f"
-    ]
-  }
+  "type": "5003"
 }

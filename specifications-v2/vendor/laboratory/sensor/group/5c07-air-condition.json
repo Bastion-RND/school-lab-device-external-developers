@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../../schema/sensor-group-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/groups/abstract-sensor-group.json",
+  "title": "Температура, влажность, точка росы",
+  "modules": {
+    "5002": {
+      "#include": "specifications/vendor/laboratory/sensor/5002-air-condition-temperature.json",
+      "title": "Температура воздуха"
+    },
+    "5003": {
+      "#include": "specifications/vendor/laboratory/sensor/5003-air-condition-relative-humidity.json",
+      "title": "Относительная влажность воздуха"
+    },
+    "501f": {
+      "#include": "specifications/vendor/laboratory/sensor/501f-air-condition-dew-point.json",
+      "title": "Точка росы"
+    }
+  },
+  "meta": {
+    "ble": {
+      "characteristicUuid": "ba575c07-eca0-11ec-8ea0-1337ac062022"
+    }
+  },
+  "type": "5c07"
+}

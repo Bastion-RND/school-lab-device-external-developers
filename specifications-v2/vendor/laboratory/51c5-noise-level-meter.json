@@ -4,10 +4,14 @@
   "title": "Измеритель уровня шума",
   "icon": "laboratories/noise-level.svg",
   "type": "51c5",
-  "modules": {
-    "5014": {
-      "#include": "specifications/vendor/laboratory/sensor/5014-noise-level.json",
-      "title": "Уровень шума"
+  "sensorGroups": {
+    "standalone": {
+      "modules": {
+        "5014": {
+          "#include": "specifications/vendor/laboratory/sensor/5014-noise-level.json",
+          "title": "Уровень шума"
+        }
+      }
     }
   }
 }

@@ -4,34 +4,38 @@
   "icon": "laboratories/physics.svg",
   "title": "Физика",
   "type": "5101",
-  "modules": {
-    "5001": {
-      "#include": "specifications/vendor/laboratory/sensor/5001-thermocouple.json",
-      "title": "Температура (ЩУП)"
-    },
-    "5006": {
-      "#include": "specifications/vendor/laboratory/sensor/5006-air-pressure.json",
-      "title": "Давление воздуха"
-    },
-    "5007": {
-      "#include": "specifications/vendor/laboratory/sensor/5007-magnetic-induction.json",
-      "title": "Индукция магнитного поля"
-    },
-    "5009": {
-      "#include": "specifications/vendor/laboratory/sensor/5009-electrical-current.json",
-      "title": "Сила тока"
-    },
-    "5021": {
-      "#include": "specifications/vendor/laboratory/sensor/5021-galvanometer.json",
-      "title": "Гальванометр"
-    },
-    "500a": {
-      "#include": "specifications/vendor/laboratory/sensor/500a-electrical-voltage.json",
-      "title": "Напряжение"
+  "sensorGroups": {
+    "standalone": {
+      "modules": {
+        "5001": {
+          "#include": "specifications/vendor/laboratory/sensor/5001-thermocouple.json",
+          "title": "Температура (ЩУП)"
+        },
+        "5006": {
+          "#include": "specifications/vendor/laboratory/sensor/5006-air-pressure.json",
+          "title": "Давление воздуха"
+        },
+        "5007": {
+          "#include": "specifications/vendor/laboratory/sensor/5007-magnetic-induction.json",
+          "title": "Индукция магнитного поля"
+        },
+        "5009": {
+          "#include": "specifications/vendor/laboratory/sensor/5009-electrical-current.json",
+          "title": "Сила тока"
+        },
+        "5021": {
+          "#include": "specifications/vendor/laboratory/sensor/5021-galvanometer.json",
+          "title": "Гальванометр"
+        },
+        "500a": {
+          "#include": "specifications/vendor/laboratory/sensor/500a-electrical-voltage.json",
+          "title": "Напряжение"
+        }
+      }
     },
     "500b": {
-      "#include": "specifications/vendor/laboratory/sensor/500b-accelerometer.json",
-      "title": "Ускорение по осям"
+      "#include": "specifications/vendor/laboratory/sensor/group/502a-accelerometer.json",
+      "title": "Ускорение по осям (XYZ)"
     }
   }
 }

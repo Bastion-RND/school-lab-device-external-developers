@@ -4,10 +4,14 @@
   "title": "Измеритель расстояния",
   "icon": "laboratories/distance.svg",
   "type": "51c2",
-  "modules": {
-    "5019": {
-      "#include": "specifications/vendor/laboratory/sensor/5019-distance.json",
-      "title": "Измеритель расстояния"
+  "sensorGroups": {
+    "standalone": {
+      "modules": {
+        "5019": {
+          "#include": "specifications/vendor/laboratory/sensor/5019-distance.json",
+          "title": "Измеритель расстояния"
+        }
+      }
     }
   }
 }

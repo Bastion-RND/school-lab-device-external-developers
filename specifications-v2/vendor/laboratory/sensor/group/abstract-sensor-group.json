@@ -1,0 +1,5 @@
+{
+  "$schema": "../../../../schema/sensor-group-schema.json",
+  "title": "Группа сенсоров",
+  "type": "0000"
+}

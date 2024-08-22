@@ -4,10 +4,14 @@
   "title": "Измеритель кислорода",
   "icon": "laboratories/oxygen-meter.svg",
   "type": "51c4",
-  "modules": {
-    "5011": {
-      "#include": "specifications/vendor/laboratory/sensor/5026-oxygen-meter.json",
-      "title": "Концентрация кислорода"
+  "sensorGroups": {
+    "standalone": {
+      "modules": {
+        "5026": {
+          "#include": "specifications/vendor/laboratory/sensor/5026-oxygen-meter.json",
+          "title": "Концентрация кислорода"
+        }
+      }
     }
   }
 }

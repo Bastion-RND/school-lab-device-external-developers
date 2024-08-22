@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schema/sensor-schema.json",
+  "#include": "specifications/vendor/laboratory/sensor/502a-accelerometer-x.json",
+  "title": "Ускорение, ось Y",
+  "parameters": {
+    "0b00": {
+      "meta": {
+        "valueLabel": [
+          "Ускорение, ось Y"
+        ]
+      }
+    }
+  },
+  "type": "502b"
+}

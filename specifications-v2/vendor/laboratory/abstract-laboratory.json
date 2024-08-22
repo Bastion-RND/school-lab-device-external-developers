@@ -258,5 +258,11 @@
         }
       }
     }
+  },
+  "sensorGroups": {
+    "standalone": {
+      "title": "Standalone sensors",
+      "type": "0000"
+    }
   }
 }

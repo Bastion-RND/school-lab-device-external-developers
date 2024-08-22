@@ -1,19 +1,15 @@
 {
   "$schema": "../../../schema/sensor-schema.json",
   "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-  "title": "Ускорение (акселерометр)",
+  "title": "Ускорение, ось X",
   "parameters": {
     "0b00": {
       "defaultValue": [
-        0,
-        0,
         0
       ],
       "meta": {
         "valueLabel": [
-          "Ускорение ось X",
-          "Ускорение ось Y",
-          "Ускорение ось Z"
+          "Ускорение, ось X"
         ]
       }
     },
@@ -62,10 +58,12 @@
       }
     }
   },
-  "type": "500b",
+  "type": "502a",
   "meta": {
-    "ble": {
-      "characteristicUuid": "ba57500b-eca0-11ec-8ea0-1337ac062022"
-    }
+    "combinedSensorGroup": [
+      "502a",
+      "502b",
+      "502c"
+    ]
   }
 }

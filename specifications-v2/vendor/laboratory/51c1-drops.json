@@ -4,10 +4,14 @@
   "title": "Счетчик капель",
   "icon": "laboratories/drops.svg",
   "type": "51c1",
-  "modules": {
-    "501a": {
-      "#include": "specifications/vendor/laboratory/sensor/501a-drop-counter.json",
-      "title": "Устройство подсчета капель на штатив"
+  "sensorGroups": {
+    "standalone": {
+      "modules": {
+        "501a": {
+          "#include": "specifications/vendor/laboratory/sensor/501a-drop-counter.json",
+          "title": "Устройство подсчета капель на штатив"
+        }
+      }
     }
   }
 }

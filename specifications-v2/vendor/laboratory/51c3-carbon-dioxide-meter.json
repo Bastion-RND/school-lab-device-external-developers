@@ -4,10 +4,14 @@
   "title": "Измеритель углекислого газа",
   "icon": "laboratories/carbon-dioxide-meter.svg",
   "type": "51c3",
-  "modules": {
-    "5011": {
-      "#include": "specifications/vendor/laboratory/sensor/5011-carbon-dioxide-meter.json",
-      "title": "Двуокись углерода"
+  "sensorGroups": {
+    "standalone": {
+      "modules": {
+        "5011": {
+          "#include": "specifications/vendor/laboratory/sensor/5011-carbon-dioxide-meter.json",
+          "title": "Двуокись углерода"
+        }
+      }
     }
   }
 }

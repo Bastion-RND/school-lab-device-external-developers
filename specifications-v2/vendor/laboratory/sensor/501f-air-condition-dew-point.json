@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/sensor-schema.json",
-  "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
+  "#include": "specifications/vendor/laboratory/sensor/5002-air-condition-temperature.json",
   "title": "Точка росы",
   "parameters": {
     "0b00": {
@@ -31,15 +31,5 @@
       }
     }
   },
-  "type": "501f",
-  "meta": {
-    "ble": {
-      "characteristicUuid": "ba57501f-eca0-11ec-8ea0-1337ac062022"
-    },
-    "combinedSensorGroup": [
-      "5002",
-      "5003",
-      "501f"
-    ]
-  }
+  "type": "501f"
 }

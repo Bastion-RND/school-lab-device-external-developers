@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Школьная лаборатория (Schema)",
+  "title": "Группа сенсоров школьной лаборатории (Schema)",
   "description": "",
   "$defs": {
     "json": {
@@ -19,10 +19,6 @@
       "minLength": 36,
       "maxLength": 36
     },
-    "image": {
-      "type": "string",
-      "pattern": "^([0-9a-z-./])+\\.(svg|png)$"
-    },
     "title": {
       "type": "string",
       "minLength": 0
@@ -32,20 +28,6 @@
         "string",
         "null"
       ]
-    },
-    "lifeCycle": {
-      "type": "string",
-      "enum": [
-        "UNAVAILABLE",
-        "PRE-ALPHA",
-        "ALPHA",
-        "BETA",
-        "RELEASE CANDIDATE",
-        "RELEASE",
-        "PRODUCTION",
-        "END OF LIFE"
-      ],
-      "default": "BETA"
     },
     "parameterMeta": {
       "type": "object",
@@ -228,51 +210,6 @@
       "required": [
         "title"
       ]
-    },
-    "sensorGroup": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "#include": {
-          "$ref": "#/$defs/json"
-        },
-        "title": {
-          "$ref": "#/$defs/title"
-        },
-        "description": {
-          "$ref": "#/$defs/description"
-        },
-        "type": {
-          "$ref": "#/$defs/uuid16"
-        },
-        "modules": {
-          "type": "object",
-          "additionalProperties": false,
-          "patternProperties": {
-            "^[0-9a-f]+$": {
-              "$ref": "#/$defs/module"
-            }
-          },
-          "minProperties": 1
-        },
-        "meta": {
-          "ble": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "characteristicUuid": {
-                "$ref": "#/$defs/uuid128"
-              },
-              "descriptorUuid": {
-                "$ref": "#/$defs/uuid16"
-              }
-            },
-            "required": [
-              "characteristicUuid"
-            ]
-          }
-        }
-      }
     }
   },
   "type": "object",
@@ -284,45 +221,14 @@
     "#include": {
       "$ref": "#/$defs/json"
     },
-    "type": {
-      "$ref": "#/$defs/uuid16"
-    },
     "title": {
-      "type": "string",
-      "minLength": 0
+      "$ref": "#/$defs/title"
     },
     "description": {
-      "type": [
-        "string",
-        "null"
-      ]
+      "$ref": "#/$defs/description"
     },
-    "lifeCycle": {
-      "$ref": "#/$defs/lifeCycle"
-    },
-    "icon": {
-      "$ref": "#/$defs/image"
-    },
-    "updaterReleaseType": {
-      "type": "string",
-      "pattern": "^([0-9a-z-])+$"
-    },
-    "commands": {
-      "type": "array",
-      "minItems": 0,
-      "items": {
-        "type": "string",
-        "enum": [
-          "CUSTOM_COMMAND",
-          "REQUEST_CONNECT",
-          "REFRESH_DATA",
-          "READ_FILE",
-          "WRITE_FILE",
-          "STAT_FILE",
-          "SET_TIME",
-          "REBOOT"
-        ]
-      }
+    "type": {
+      "$ref": "#/$defs/uuid16"
     },
     "modules": {
       "type": "object",
@@ -334,15 +240,29 @@
       },
       "minProperties": 1
     },
-    "sensorGroups": {
+    "meta": {
       "type": "object",
       "additionalProperties": false,
-      "patternProperties": {
-        "^standalone|[0-9a-f]+$": {
-          "$ref": "#/$defs/sensorGroup"
+      "properties": {
+        "ble": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "characteristicUuid": {
+              "$ref": "#/$defs/uuid128"
+            },
+            "descriptorUuid": {
+              "$ref": "#/$defs/uuid16"
+            }
+          },
+          "required": [
+            "characteristicUuid"
+          ]
         }
-      },
-      "minProperties": 1
+      }
     }
-  }
+  },
+  "required": [
+    "type"
+  ]
 }

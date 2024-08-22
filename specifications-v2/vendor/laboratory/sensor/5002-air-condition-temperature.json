@@ -1,12 +1,12 @@
 {
   "$schema": "../../../schema/sensor-schema.json",
   "#include": "specifications/vendor/laboratory/sensor/abstract-sensor.json",
-  "title": "Электрокардиограмма",
+  "title": "Температура воздуха",
   "parameters": {
     "0b00": {
       "meta": {
         "valueLabel": [
-          "ЭКГ"
+          "Температура воздуха"
         ]
       }
     },
@@ -14,16 +14,16 @@
       "meta": {
         "range": [
           {
-            "minValue": 0,
-            "maxValue": 300,
-            "precision": 0,
-            "unitName": "В",
+            "minValue": -40,
+            "maxValue": 125,
+            "precision": 1,
+            "unitName": "°C",
             "unitNameOffset": 0,
-            "calibrationPoints": 0
+            "calibrationPoints": 1
           }
         ],
         "valueLabel": [
-          "ЭКГ"
+          "Температура воздуха"
         ],
         "parameterGroup": [
           "SENSOR"
@@ -31,10 +31,12 @@
       }
     }
   },
-  "type": "5012",
+  "type": "5002",
   "meta": {
-    "ble": {
-      "characteristicUuid": "ba575012-eca0-11ec-8ea0-1337ac062022"
-    }
+    "combinedSensorGroup": [
+      "5002",
+      "5003",
+      "501f"
+    ]
   }
 }
