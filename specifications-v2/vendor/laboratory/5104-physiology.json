@@ -19,10 +19,6 @@
           "#include": "specifications/vendor/laboratory/sensor/5015-temperature-ntc-sensor.json",
           "title": "Температура, датчик NTC"
         },
-        "500b": {
-          "#include": "specifications/vendor/laboratory/sensor/500b-accelerometer.json",
-          "title": "Ускорение по осям"
-        },
         "501b": {
           "#include": "specifications/vendor/laboratory/sensor/501b-breathing-rate.json",
           "title": "Частота дыхания"
