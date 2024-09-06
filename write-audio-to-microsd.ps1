@@ -102,11 +102,11 @@ function Format-USBDrive {
         
         $diskNumber = $partition.DiskNumber
 
-        # Находим первую доступную букву диска, которая ещё не используется
-        $existingDriveLetters = Get-WmiObject Win32_LogicalDisk | Select-Object -ExpandProperty DeviceID
-        $letter1 = [char]([int][char]$existingDriveLetters[-1].Trim(':') + 1)
-        $letter2 = [char]([int][char]$existingDriveLetters[-1].Trim(':') + 2)
-        $letter3 = [char]([int][char]$existingDriveLetters[-1].Trim(':') + 3)
+        # Находим первую доступную букву диска, которая ещё не используется        
+        $AllLetters = 65..90 | ForEach-Object {[char]$_ + ":"}
+        $UsedLetters = get-wmiobject win32_logicaldisk | select -expand deviceid
+        $FreeLetters = $AllLetters | Where-Object {$UsedLetters -notcontains $_}
+        $letter1, $letter2, $letter3 = $FreeLetters | ForEach-Object {$_.Trim(':')} | select-object -last 3
 
         # Отформатируем диск с помощью diskpart
         $diskPartScript = @"
@@ -178,8 +178,8 @@ $selectedDrive = Get-USBDrives
 # Форматируем выбранный накопитель
 $newDriveLetter = Format-USBDrive -driveLetter $selectedDrive
 
+Write-Host $newDriveLetter
+
 # Разархивируем аудио файл в первый раздел выбранного накопителя
 #Expand-Archive -Path $fileName -DestinationPath ($letter1 + ":\") -Force
 ExtractToUSB -fileName $fileName -driveLetter $newDriveLetter
-
-
