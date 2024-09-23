@@ -1,5 +1,6 @@
 {
   "$schema": "schema/vendor.schema.json",
+  "#include": "specifications/vendor/abstract-vendor.json",
   "uuid": "a591ab7c-260d-4875-8a9f-224b7f8421cf",
   "target": "znaykalab",
   "title": "ЗнайкаЛАБ",
