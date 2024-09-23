@@ -1,6 +1,5 @@
 {
   "$schema": "schema/vendor.schema.json",
-  "#include": "specifications/vendor/abstract-vendor.json",
   "uuid": "20c321be-01bf-43d5-8951-a856ad884250",
   "target": "polylab",
   "title": "Полилаб",

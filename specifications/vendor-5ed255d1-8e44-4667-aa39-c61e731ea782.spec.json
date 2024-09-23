@@ -1,6 +1,5 @@
 {
   "$schema": "schema/vendor.schema.json",
-  "#include": "specifications/vendor/abstract-vendor.json",
   "uuid": "5ed255d1-8e44-4667-aa39-c61e731ea782",
   "target": "basic",
   "title": "Школьная лаборатория",
