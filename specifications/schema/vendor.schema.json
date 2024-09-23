@@ -6,7 +6,10 @@
   "type": "object",
   "$definitions": {
     "uuid": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "minLength": 36,
       "maxLength": 36
     },
@@ -16,8 +19,10 @@
       "maxLength": 64
     },
     "description": {
-      "type": "string",
-      "minLength": 1
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "vendorLab": {
       "description": "Laboratory of vendor",
@@ -103,6 +108,33 @@
       },
       "additionalProperties": false
     },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "baseUnit": {
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$definitions/title"
+        },
+        "coefficient": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        },
+        "precision": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "baseUnit",
+        "title",
+        "coefficient",
+        "offset"
+      ]
+    },
     "sound": {
       "type": "object",
       "description": "Sound config",
@@ -111,7 +143,13 @@
           "type": "array",
           "items": {
             "type": "string",
-            "enum": ["ru", "en", "fr", "uz", "kz"]
+            "enum": [
+              "ru",
+              "en",
+              "fr",
+              "uz",
+              "kz"
+            ]
           }
         },
         "voices": {
@@ -120,7 +158,10 @@
           "minItems": 1,
           "items": {
             "type": "integer",
-            "enum": [0, 1]
+            "enum": [
+              0,
+              1
+            ]
           }
         }
       },
