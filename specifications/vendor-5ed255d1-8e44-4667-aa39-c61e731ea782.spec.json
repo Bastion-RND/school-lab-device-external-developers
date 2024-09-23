@@ -60,5 +60,286 @@
       0,
       1
     ]
+  },
+  "units": {
+    "°C": {
+      "title": "Градус Цельсия",
+      "baseUnit": "°C",
+      "coefficient": 1,
+      "offset": 0
+    },
+    "°F": {
+      "title": "Градус Фаренгейта",
+      "baseUnit": "°C",
+      "coefficient": 1.8,
+      "offset": 32.0
+    },
+    "°K": {
+      "title": "Градус Кельвина",
+      "baseUnit": "°C",
+      "coefficient": 1.0,
+      "offset": 273.15
+    },
+    "Па": {
+      "title": "Паскаль",
+      "baseUnit": "Па",
+      "coefficient": 1.0,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "Н/м²": {
+      "title": "Ньютон на м²",
+      "baseUnit": "Па",
+      "coefficient": 1.0,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "кПа": {
+      "title": "Килопаскаль",
+      "baseUnit": "Па",
+      "coefficient": 0.001,
+      "offset": 0.0
+    },
+    "бар": {
+      "title": "Бар",
+      "baseUnit": "Па",
+      "coefficient": 0.00001,
+      "offset": 0.0
+    },
+    "psi": {
+      "title": "Фунт на квадратный дюйм",
+      "baseUnit": "Па",
+      "coefficient": 0.00014504,
+      "offset": 0.0
+    },
+    "атм": {
+      "title": "Физическая атмосфера",
+      "baseUnit": "Па",
+      "coefficient": 0.0000098692,
+      "offset": 0.0
+    },
+    "ат": {
+      "title": "Техническая атмосфера",
+      "baseUnit": "Па",
+      "coefficient": 0.00000101972,
+      "offset": 0.0
+    },
+    "мм рт. ст.": {
+      "title": "Миллиметр ртутного столба",
+      "baseUnit": "Па",
+      "coefficient": 0.0075006,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "мм вод. ст.": {
+      "title": "Миллиметр водяного столба",
+      "baseUnit": "Па",
+      "coefficient": 0.10197,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "Тл": {
+      "title": "Тесла",
+      "baseUnit": "Тл",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 3
+    },
+    "мТл": {
+      "title": "Миллитесла",
+      "baseUnit": "Тл",
+      "coefficient": 1000.0,
+      "offset": 0.0
+    },
+    "Гс": {
+      "title": "Гаусс",
+      "baseUnit": "Тл",
+      "coefficient": 10000.0,
+      "offset": 0.0
+    },
+    "В": {
+      "title": "Вольт",
+      "baseUnit": "В",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 3
+    },
+    "мВ": {
+      "title": "Милливольт",
+      "baseUnit": "В",
+      "coefficient": 1000.0,
+      "offset": 0.0
+    },
+    "мкВ": {
+      "title": "Микровольт",
+      "baseUnit": "В",
+      "coefficient": 1000000.0,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "А": {
+      "title": "Ампер",
+      "baseUnit": "А",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 3
+    },
+    "мА": {
+      "title": "Миллиампер",
+      "baseUnit": "А",
+      "coefficient": 1000.0,
+      "offset": 0.0
+    },
+    "мкА": {
+      "title": "Микроампер",
+      "baseUnit": "А",
+      "coefficient": 1000000.0,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "См": {
+      "title": "Сименс",
+      "baseUnit": "См",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 3
+    },
+    "1/Ом": {
+      "title": "Величина, обратная Ому",
+      "baseUnit": "См",
+      "coefficient": 1.0,
+      "offset": 0.0,
+      "precision": 3
+    },
+    "мСм": {
+      "title": "Миллисименс",
+      "baseUnit": "См",
+      "coefficient": 1000.0,
+      "offset": 0.0
+    },
+    "мкСм": {
+      "title": "Микросименс",
+      "baseUnit": "См",
+      "coefficient": 1000000.0,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "лк": {
+      "title": "Люкс",
+      "baseUnit": "лк",
+      "coefficient": 1.0,
+      "offset": 0.0
+    },
+    "лм/м²": {
+      "title": "Люмен на м²",
+      "baseUnit": "лк",
+      "coefficient": 1.0,
+      "offset": 0.0
+    },
+    "клк": {
+      "title": "Килолюкс",
+      "baseUnit": "лк",
+      "coefficient": 0.001,
+      "offset": 0.0
+    },
+    "г": {
+      "title": "Грамм",
+      "baseUnit": "кг",
+      "coefficient": 1000,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "кг": {
+      "title": "Килограмм",
+      "baseUnit": "кг",
+      "coefficient": 1,
+      "offset": 0.0
+    },
+    "%": {
+      "title": "Процент",
+      "baseUnit": "%",
+      "coefficient": 1,
+      "offset": 0.0
+    },
+    "pH": {
+      "title": "Водородный показатель",
+      "baseUnit": "pH",
+      "coefficient": 1,
+      "offset": 0.0
+    },
+    "D": {
+      "title": "D",
+      "baseUnit": "D",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 3
+    },
+    "ppm": {
+      "title": "Частей на миллион",
+      "baseUnit": "ppm",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "ppb": {
+      "title": "Частей на миллиард",
+      "baseUnit": "ppb",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "м/л": {
+      "title": "Моль/литр",
+      "baseUnit": "м/л",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 5
+    },
+    "мм": {
+      "title": "Миллиметр",
+      "baseUnit": "м",
+      "coefficient": 1000,
+      "offset": 0.0
+    },
+    "м": {
+      "title": "Метр",
+      "baseUnit": "м",
+      "coefficient": 1,
+      "offset": 0.0
+    },
+    "ед": {
+      "title": "Единицы",
+      "baseUnit": "ед",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "мин⁻¹": {
+      "title": "Раз в минуту",
+      "baseUnit": "мин⁻¹",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 0
+    },
+    "NTU": {
+      "title": "NTU",
+      "baseUnit": "NTU",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 2
+    },
+    "g": {
+      "title": "g",
+      "baseUnit": "g",
+      "coefficient": 1,
+      "offset": 0.0
+    },
+    "σ": {
+      "title": "σ",
+      "baseUnit": "σ",
+      "coefficient": 1,
+      "offset": 0.0,
+      "precision": 0
+    }
   }
 }
