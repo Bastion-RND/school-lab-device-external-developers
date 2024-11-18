@@ -1,0 +1,25 @@
+{
+  "$schema": "schema/multisensor.schema.json",
+  "uuid": "000051C8-0000-1000-8000-00805f9b34fb",
+  "title": "Измеритель электрической проводимости",
+  "advName": "TDS Meter #",
+  "moduleName": "tds_meter",
+  "sensors": [
+    {
+      "description": "Электрическая проводимость",
+      "uuid": "ba575005-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 105
+      }
+    },
+    {
+      "description": "Концентрация ионов",
+      "uuid": "ba575024-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 136
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "schema/multisensor.schema.json",
+  "uuid": "000051C7-0000-1000-8000-00805f9b34fb",
+  "title": "Измеритель водородного показателя (pH)",
+  "advName": "PH Meter #",
+  "moduleName": "ph_meter",
+  "sensors": [
+    {
+      "description": "Водородный показатель (pH)",
+      "uuid": "ba575008-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 1,
+        "soundNumber": 108
+      }
+    }
+  ]
+}
