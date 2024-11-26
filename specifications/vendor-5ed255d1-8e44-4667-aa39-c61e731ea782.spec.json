@@ -45,6 +45,10 @@
     "Температура ЩУП": {
       "uuid": "51C6",
       "lifeCycle": "ALPHA"
+    },
+    "Угловая скорость": {
+      "uuid": "51CA",
+      "lifeCycle": "ALPHA"
     }
   },
   "sound": {
@@ -61,6 +65,12 @@
     ]
   },
   "units": {
+    "рад/с": {
+      "title": "радиан в секунду",
+      "baseUnit": "рад/с",
+      "coefficient": 1,
+      "offset": 0
+    },
     "°C": {
       "title": "Градус Цельсия",
       "baseUnit": "°C",
