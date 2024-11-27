@@ -73,8 +73,7 @@
       "uuid": "51C5"
     },
     "Угловая скорость": {
-      "uuid": "51CA",
-      "lifeCycle": "ALPHA"
+      "uuid": "51CA"
     }
   },
   "sound": {
