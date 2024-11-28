@@ -1,0 +1,13 @@
+{
+  "$schema": "schema/multisensor.schema.json",
+  "uuid": "000051CA-0000-1000-8000-00805f9b34fb",
+  "title": "Угловая скорость",
+  "advName": "ANGVEL #",
+  "moduleName": "ANGVEL",
+  "sensors": [
+    {
+      "description": "Угловая скорость (цифровой датчик)",
+      "uuid": "b3e1f07b-78c6-48d4-98c8-fb3a78f01234"
+    }
+  ]
+}
