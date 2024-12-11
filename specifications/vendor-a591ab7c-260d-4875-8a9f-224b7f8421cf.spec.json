@@ -98,7 +98,7 @@
       "offset": 273.15
     },
     "мПа": {
-      "title": "Микропаскаль",
+      "title": "Миллипаскаль",
       "baseUnit": "Па",
       "coefficient": 1000,
       "offset": 0,
