@@ -8,7 +8,7 @@
   },
   "yAxis": [
     {
-      "unit": "Па",
+      "unit": "мПа",
       "title": "Шум",
       "range": {
         "list": [
