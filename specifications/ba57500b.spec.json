@@ -8,7 +8,7 @@
   },
   "yAxis": [
     {
-      "unit": " g",
+      "unit": "g",
       "title": "Ускорение",
       "range": {
         "list": [

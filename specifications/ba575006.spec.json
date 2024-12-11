@@ -8,7 +8,7 @@
   },
   "yAxis": [
     {
-      "unit": " Па",
+      "unit": "Па",
       "title": "Давление",
       "range": {
         "list": [

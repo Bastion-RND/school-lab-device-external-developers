@@ -8,7 +8,7 @@
   },
   "yAxis": [
     {
-      "unit": " В",
+      "unit": "В",
       "title": "Напряжение",
       "range": {
         "list": [

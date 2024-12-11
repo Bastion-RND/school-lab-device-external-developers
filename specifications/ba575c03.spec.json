@@ -8,7 +8,7 @@
   },
   "yAxis": [
     {
-      "unit": " А",
+      "unit": "А",
       "title": "Сила тока",
       "range": {
         "list": [
@@ -77,7 +77,11 @@
         "current",
         "measurements"
       ],
-      "yAxisIndex": 1
+      "yAxisIndex": 1,
+      "errors": {
+        "0": "Нет ошибки",
+        "1": "Датчик не подключен"
+      }
     }
   ]
 }

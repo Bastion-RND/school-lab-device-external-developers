@@ -8,7 +8,7 @@
   },
   "yAxis": [
     {
-      "unit": " pH",
+      "unit": "pH",
       "title": "Водородный показатель",
       "range": {
         "list": [
