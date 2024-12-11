@@ -79,6 +79,13 @@
       "coefficient": 1.0,
       "offset": 273.15
     },
+    "мПа": {
+      "title": "Микропаскаль",
+      "baseUnit": "Па",
+      "coefficient": 1000,
+      "offset": 0,
+      "precision": 1
+    },
     "Па": {
       "title": "Паскаль",
       "baseUnit": "Па",
