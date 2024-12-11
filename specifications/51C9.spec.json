@@ -1,0 +1,17 @@
+{
+  "$schema": "schema/multisensor.schema.json",
+  "uuid": "000051C9-0000-1000-8000-00805f9b34fb",
+  "title": "Измеритель давления воздуха",
+  "advName": "APMeter #",
+  "moduleName": "AIRPRES",
+  "sensors": [
+    {
+      "description": "Давление воздуха",
+      "uuid": "ba575006-eca0-11ec-8ea0-1337ac062022",
+      "sound": {
+        "sensorType": 0,
+        "soundNumber": 106
+      }
+    }
+  ]
+}
