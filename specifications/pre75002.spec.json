@@ -1,0 +1,74 @@
+{
+    "$schema": "schema/sensor.schema.json",
+    "uuid": "pre75003-eca0-11ec-8ea0-1337ac062022",
+    "description": "Датчик давления и заряда аккумулятора",
+    "info": {
+      "title": "Датчик давления и заряда аккумулятора",
+      "sortOrder": -1
+    },
+    "yAxis": [
+      {
+        "unit": "Па",
+        "title": "Давление",
+        "range": {
+          "list": [
+            {
+              "min": 0,
+              "max": 1200000,
+              "precision": 1,
+              "factor": "NORMAL",
+              "calibrationPointsMin": 2
+            }
+          ],
+          "defaultIndex": 0
+        }
+      },
+      {
+        "unit": "%",
+        "title": "Заряд аккумулятора",
+        "range": {
+          "list": [
+            {
+              "min": 0,
+              "max": 100,
+              "precision": 1,
+              "factor": "NORMAL",
+              "calibrationPointsMin": 0
+            }
+          ],
+          "defaultIndex": 0
+        }
+      }
+    ],
+    "value": [
+      {
+        "title": "Давление",
+        "options": [
+          "chart",
+          "gauge",
+          "current",
+          "measurements"
+        ],
+        "yAxisIndex": 0,
+        "errors": {
+          "0": "Нет ошибки",
+          "1": "Ошибка измерения давления"
+        }
+      },
+      {
+        "title": "Заряд аккумулятора",
+        "options": [
+          "chart",
+          "gauge",
+          "current",
+          "measurements"
+        ],
+        "yAxisIndex": 1,
+        "errors": {
+          "0": "Нет ошибки",
+          "1": "Ошибка измерения заряда"
+        }
+      }
+    ]
+  }
+  
