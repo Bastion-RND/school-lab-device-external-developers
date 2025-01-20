@@ -374,5 +374,9 @@
       "offset": 0.0,
       "precision": 0
     }
+  },
+  "versionRedirectLinks": {
+    "https://old.poznaikino-lab.ru": "https://poznaikino-lab.ru",
+    "https://poznaikino-lab.ru": "https://old.poznaikino-lab.ru"
   }
 }

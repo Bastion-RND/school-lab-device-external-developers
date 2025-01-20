@@ -356,5 +356,11 @@
       "offset": 0.0,
       "precision": 0
     }
+  },
+  "versionRedirectLinks": {
+    "https://school-lab-old.bast.ru": "https://school-lab.bast.ru",
+    "https://school-lab-old.bast-dev.ru": "https://school-lab.bast-dev.ru",
+    "https://school-lab.bast.ru": "https://school-lab-old.bast.ru",
+    "https://school-lab.bast-dev.ru": "https://school-lab-old.bast.ru"
   }
 }
