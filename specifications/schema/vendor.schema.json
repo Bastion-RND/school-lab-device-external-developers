@@ -169,6 +169,12 @@
         "languages",
         "voices"
       ]
+    },
+    "versionRedirectLinks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
     }
   },
   "required": [
